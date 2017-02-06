@@ -1,7 +1,5 @@
-body {
-	background-color: lightblue;
-}
+@import "variables";
 
-p {
-	color:green;
+body {
+  background-color: $background-grey;
 }
