@@ -1,7 +1,5 @@
 Tech@NYU Main Site
 
-
-
 Setup
 ---
 
@@ -10,10 +8,9 @@ npm install
 ```
 
 
-
-Compile
+Start Application
 ---
 
 ```
-npm run compile
+npm start
 ```
