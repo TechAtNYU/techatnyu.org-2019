@@ -41,7 +41,7 @@ body {
 #tnyu-title {
   font-family: $body-font;
   font-weight: $bold-font;
-  margin-top: 18vh;
+  margin-top: 14vh;
   text-align: center;
   color: #f05158;
   font-size: 6vmin;
@@ -55,6 +55,7 @@ body {
   font-family: $body-font;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 4vh;
 }
 
 #signup-form p {
@@ -82,4 +83,9 @@ body {
   width: 3vw;
   height: 5.2vh;
   font-size: 2.5vmin;
+}
+
+// Place holder
+#carousel-wrapper {
+
 }
