@@ -5,13 +5,81 @@ body {
 }
 
 .navbar-header {
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
-  width: 100%;
-  height: 8%;
+  width: 100vw;
+  height: 8vh;
   background-color: #f05158;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.navbar-content {
+  font-family: $body-font;
+  font-weight: $light-font;
+  color: $background-grey;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-content ul {
+  padding: 0;
+}
+.navbar-content li {
+  display: inline-block;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-top: 0.4vh;
+  font-size: 2.5vmin;
+}
+
+.navbar-content a:hover {
+  font-weight: $medium-font;
+}
+
+#tnyu-title {
+  font-family: $body-font;
+  font-weight: $bold-font;
+  margin-top: 18vh;
+  text-align: center;
+  color: #f05158;
+  font-size: 6vmin;
+}
+
+#tnyu-title h1 {
+  margin-bottom: 2vh;
+}
+
+#signup-form {
+  font-family: $body-font;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#signup-form p {
+  color: #f05158;
+  font-weight: $light-font;
+  margin-bottom: 0vh;
+}
+
+#signup-form input {
+  width: 29vw;
+  height: 5.2vh;
+  font-size: 2vmin;
+  text-indent: 2vmin;
+  font-family: $body-font;
+  font-weight: $light-font;
+}
+
+#signup-form button {
+  background-color: $coral-red;
+  color: $background-grey;
+  font-weight: 100;
+  text-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 3vw;
+  height: 5.2vh;
+  font-size: 2.5vmin;
 }
