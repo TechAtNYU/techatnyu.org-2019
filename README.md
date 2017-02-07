@@ -14,5 +14,5 @@ Start Application
 ```
 npm start
 
-* Application will start on localhost:3000
+- Application will start on localhost:3000
 ```
