@@ -2,6 +2,7 @@
 
 body {
   background-color: $background-grey;
+  font-family: $body-font;
 }
 
 .navbar-header {
@@ -16,7 +17,6 @@ body {
 }
 
 .navbar-content {
-  font-family: $body-font;
   font-weight: $light-font;
   color: $background-grey;
   margin: 0 auto;
@@ -39,7 +39,6 @@ body {
 }
 
 #tnyu-title {
-  font-family: $body-font;
   font-weight: $bold-font;
   margin-top: 12vh;
   text-align: center;
@@ -52,7 +51,6 @@ body {
 }
 
 #signup-form {
-  font-family: $body-font;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +67,6 @@ body {
   height: 5.2vh;
   font-size: 2vmin;
   text-indent: 2vmin;
-  font-family: $body-font;
   font-weight: $light-font;
   vertical-align: bottom;
 
@@ -95,11 +92,9 @@ body {
 #slider-wrapper {
   margin: 0 auto;
   text-align: center;
-  font-family: $body-font;
 }
 
 #tnyu-teams {
-  font-family: $body-font;
   font-weight: $light-font;
   color: $dark-grey;
   margin: 0 auto;
@@ -177,5 +172,53 @@ body {
   vertical-align: top;
   margin-top: 8vh;
 }
+
+#tnyu-description {
+
+  text-align: center;
+  margin-top: 5vh;
+  font-weight: $light-font;
+  color: $coral-red;
+  font-size: 3vmin;
+}
+
+#footer {
+  margin: 0 auto;
+  text-align: center;
+  color: $light-grey;
+  font-weight: $light-font;
+  display: inline;
+}
+
+#footer hr {
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  border-color: $border-grey;
+  width: 56vw;
+}
+
+#footer-content{
+  text-align: center;
+  position: relative;
+  font-size: 1.8vmin;
+}
+
+#copyright {
+  display: inline;
+  position: absolute;
+  left: 21vw;
+}
+
+#social-handles {
+   display: inline;
+   position: absolute;
+   right: 21vw;
+}
+
+#social-handles a{
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
 
 
