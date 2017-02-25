@@ -22,7 +22,9 @@
     "node-sass": "^4.5.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-slick": "^0.14.2",
     "sass-loader": "^4.1.1",
+    "slick-carousel": "^1.6.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.10.0"

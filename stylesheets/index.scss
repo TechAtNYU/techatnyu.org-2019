@@ -94,6 +94,12 @@ body {
   text-align: center;
 }
 
+#main-slider {
+  width: 60vw;
+  margin: 0 auto;
+  text-align:center;
+}
+
 #tnyu-teams {
   font-weight: $light-font;
   color: $dark-grey;
@@ -218,6 +224,10 @@ body {
 #social-handles a{
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+}
+
+hr {
+  border: 0.4px solid rgb(128, 128, 128);
 }
 
 
