@@ -4,32 +4,18 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-// TODO:: create dynamic event cards
-
-// var eventCard = React.createClass({
-//     render() {
-//         return(
-//             <div className="event-card">
-//                 <p className="event-title"> GHC MEETUP </p>
-//                 <p className="event-team"> After Hours </p>
-//                 <p className="event-description">
-//                     After Hours is back with the GHC Edition—anybody attending Grace Hopper from NYU is
-//                     welcome to attend so we can all get to meet each other before the celebration.
-//                 </p>
-//                 <hr></hr>
-//                     <p className="event-date"> 10.12 </p>
-//             </div>
-//         );
-//     }
-// });
+// TODO:: Create dynamic event cards
+// TODO:: Custom arrows and fix shadows
 
 var SimpleSlider = React.createClass({
 
     render: function () {
         var settings = {
-            dots: true,
+            dots: false,
             slidesToShow: 3,
-            arrows:true
+            arrows:true,
+            // nextArrow: <SampleNextArrow/>,
+            // prevArrow: <SamplePrevArrow/>
         };
         return (
             <div>
@@ -75,6 +61,8 @@ var SimpleSlider = React.createClass({
         );
     }
 });
+
+
 
 export default SimpleSlider;
 

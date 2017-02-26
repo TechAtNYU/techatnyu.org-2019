@@ -43,7 +43,7 @@ body {
   margin-top: 12vh;
   text-align: center;
   color: #f05158;
-  font-size: 6vmin;
+  font-size: 5.5vmin;
 }
 
 #tnyu-title h1 {
@@ -92,12 +92,15 @@ body {
 #slider-wrapper {
   margin: 0 auto;
   text-align: center;
+
 }
 
 #main-slider {
   width: 60vw;
   margin: 0 auto;
   text-align:center;
+  display: inline-block;
+  position: relative;
 }
 
 #tnyu-teams {
@@ -124,10 +127,9 @@ body {
   margin-right: 1.5vw;
   margin-left: 1.5vw;
   background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   vertical-align: top;
   position: relative;
-
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
 }
 
 .event-card hr {
@@ -228,6 +230,18 @@ body {
 
 hr {
   border: 0.4px solid rgb(128, 128, 128);
+}
+
+// TODO:: override the default arrows
+
+.slick-prev:before {
+  color: $coral-red;
+  font-size: 3vmin;
+}
+
+.slick-next:before {
+  color: $coral-red;
+  font-size: 3vmin;
 }
 
 
