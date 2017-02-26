@@ -17,11 +17,11 @@ body {
 }
 
 .navbar-content {
-  font-weight: $light-font;
-  color: $background-grey;
-  margin: 0 auto;
-  text-align: center;
-}
+   font-weight: $light-font;
+   color: $background-grey;
+   margin: 0 auto;
+   text-align: center;
+ }
 
 .navbar-content ul {
   padding: 0;
@@ -32,6 +32,11 @@ body {
   margin-left: 2vw;
   margin-top: 0.4vh;
   font-size: 2.5vmin;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-content a:hover {
@@ -130,7 +135,7 @@ body {
   background-color: white;
   vertical-align: top;
   position: relative;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .event-card hr {
@@ -210,6 +215,7 @@ body {
   text-align: center;
   position: relative;
   font-size: 1.8vmin;
+  margin-bottom: 10vh;
 }
 
 #copyright {
@@ -219,14 +225,20 @@ body {
 }
 
 #social-handles {
-   display: inline;
-   position: absolute;
-   right: 21vw;
+  display: inline;
+  position: absolute;
+  right: 21vw;
 }
 
 #social-handles a{
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+  text-decoration: none;
+  color: $light-grey;
+}
+
+#social-handles a:hover {
+  color: $dark-grey;
 }
 
 hr {
