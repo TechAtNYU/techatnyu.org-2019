@@ -17,11 +17,11 @@ body {
 }
 
 .navbar-content {
-  font-weight: $light-font;
-  color: $background-grey;
-  margin: 0 auto;
-  text-align: center;
-}
+   font-weight: $light-font;
+   color: $background-grey;
+   margin: 0 auto;
+   text-align: center;
+ }
 
 .navbar-content ul {
   padding: 0;
@@ -34,6 +34,11 @@ body {
   font-size: 2.5vmin;
 }
 
+.navbar-content a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar-content a:hover {
   font-weight: $medium-font;
 }
@@ -43,7 +48,7 @@ body {
   margin-top: 12vh;
   text-align: center;
   color: #f05158;
-  font-size: 6vmin;
+  font-size: 5.5vmin;
 }
 
 #tnyu-title h1 {
@@ -92,6 +97,15 @@ body {
 #slider-wrapper {
   margin: 0 auto;
   text-align: center;
+
+}
+
+#main-slider {
+  width: 60vw;
+  margin: 0 auto;
+  text-align:center;
+  display: inline-block;
+  position: relative;
 }
 
 #tnyu-teams {
@@ -117,11 +131,11 @@ body {
   height: 15vw;
   margin-right: 1.5vw;
   margin-left: 1.5vw;
+  margin-bottom:1vw;
   background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   vertical-align: top;
   position: relative;
-
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .event-card hr {
@@ -153,7 +167,7 @@ body {
   font-weight: $light-font;
   margin-left: 1.3vw;
   margin-right: 1vw;
-  font-size: 1.8vmin;
+  font-size: 1.75vmin;
 }
 
 .event-date {
@@ -201,6 +215,7 @@ body {
   text-align: center;
   position: relative;
   font-size: 1.8vmin;
+  margin-bottom: 10vh;
 }
 
 #copyright {
@@ -210,14 +225,36 @@ body {
 }
 
 #social-handles {
-   display: inline;
-   position: absolute;
-   right: 21vw;
+  display: inline;
+  position: absolute;
+  right: 21vw;
 }
 
 #social-handles a{
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+  text-decoration: none;
+  color: $light-grey;
+}
+
+#social-handles a:hover {
+  color: $dark-grey;
+}
+
+hr {
+  border: 0.4px solid rgb(128, 128, 128);
+}
+
+// TODO:: override the default arrows
+
+.slick-prev:before {
+  color: $coral-red;
+  font-size: 3vmin;
+}
+
+.slick-next:before {
+  color: $coral-red;
+  font-size: 3vmin;
 }
 
 
