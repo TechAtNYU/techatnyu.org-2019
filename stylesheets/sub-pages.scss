@@ -95,7 +95,37 @@
   z-index: -1;
 }
 
+#comment-img {
+  right: -4vw;
+  top: 205vh;
+  position: absolute;
+  width: 25vh;
+  z-index: -1;
+}
 
+#tnyu-teams {
+  margin: 0 auto;
+  font-weight: $light-font;
+}
+
+.team-name {
+  text-align: right;
+  padding-right: 7vw;
+  color: $coral-red;
+  font-size: 3.5vmin;
+  padding-bottom: 4vw;
+  vertical-align: top;
+}
+
+.team-description {
+  width: 30vw;
+  text-align: left;
+  color: black;
+  font-size: 2vmin;
+  padding-right: 8vw;
+  padding-bottom: 4vw;
+  vert-align: top;
+}
 
 
 
