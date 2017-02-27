@@ -1,6 +1,6 @@
 @import "variables";
 
-#faq-title {
+.page-title {
   color: $coral-red;
   position: fixed;
   font-size: 8vmin;
@@ -9,8 +9,8 @@
 }
 
 
-#faq-content {
-  margin-left: 80vh;
+.page-content {
+  margin-left: 82vh;
   margin-top: 20vh;
   text-align: left;
 }
@@ -34,8 +34,8 @@
 }
 
 .answer a {
-  color: $dark-grey;
-  text-decoration: none;
+  color: $light-red;
+  text-decoration: underline;
 }
 
 .email-us {
@@ -48,7 +48,17 @@
 }
 
 .email-us a {
-  text-decoration: none;
+  text-decoration: underline;
   color: $light-red;
 }
+
+#tech-description {
+  font-weight: $light-font;
+  width: 32vw;
+  font-size: 2vmin;
+  margin-bottom: 22vh;
+}
+
+
+
 
