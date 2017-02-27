@@ -12,8 +12,9 @@ var config = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')}
+        { test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
+        { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')},
+        { test: /\.(png|jpg)$/, loader:'url-loader'}
     ],
   },
   plugins: [

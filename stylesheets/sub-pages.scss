@@ -2,16 +2,16 @@
 
 .page-title {
   color: $coral-red;
-  position: fixed;
+  position: relative;
   font-size: 8vmin;
   left: 22vw;
   top: 10vh;
+  z-index: 1000;
 }
-
 
 .page-content {
   margin-left: 82vh;
-  margin-top: 20vh;
+  margin-top: 10vh;
   text-align: left;
 }
 
@@ -52,12 +52,33 @@
   color: $light-red;
 }
 
-#tech-description {
+.tech-description {
   font-weight: $light-font;
   width: 32vw;
   font-size: 2vmin;
-  margin-bottom: 22vh;
+  margin-bottom: 15vh;
 }
+
+#events {
+  font-size: 4.5vmin;
+  font-weight: $bold-font;
+  color: $coral-red;
+  margin-bottom: 5vh;
+}
+
+#events-line {
+  border-color: $coral-red;
+  width: 8vw;
+}
+
+#dots {
+  left: 24vw;
+  top: 18vh;
+  position: absolute;
+  width: 50vh;
+  z-index: -1;
+}
+
 
 
 
