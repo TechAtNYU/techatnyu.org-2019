@@ -10,7 +10,7 @@
 }
 
 .page-content {
-  margin-left: 82vh;
+  margin-left: 81.5vh;
   margin-top: 25vh;
   text-align: left;
 }
@@ -59,7 +59,7 @@
   margin-bottom: 15vh;
 }
 
-#events {
+.events {
   font-size: 4.5vmin;
   font-weight: $bold-font;
   color: $coral-red;
@@ -134,6 +134,13 @@
   padding-top: 7vh;
   padding-bottom: 7vh;
 
+}
+
+#anti-harassment {
+  margin-left: 81.5vh;
+  width: 30vw;
+  font-weight: $light-font;
+  margin-bottom: 10vh;
 }
 
 
