@@ -2,7 +2,7 @@
 
 .page-title {
   color: $coral-red;
-  position: relative;
+  position: absolute;
   font-size: 8vmin;
   left: 22vw;
   top: 10vh;
@@ -11,7 +11,7 @@
 
 .page-content {
   margin-left: 82vh;
-  margin-top: 10vh;
+  margin-top: 25vh;
   text-align: left;
 }
 
@@ -76,6 +76,22 @@
   top: 18vh;
   position: absolute;
   width: 50vh;
+  z-index: -1;
+}
+
+#clock {
+  left: -4vw;
+  top: 70vh;
+  position: absolute;
+  width: 28vh;
+  z-index: -1;
+}
+
+#squiggly {
+  left: 2vw;
+  top: 85vh;
+  position: absolute;
+  width: 25vh;
   z-index: -1;
 }
 
