@@ -9,6 +9,10 @@
   z-index: 1000;
 }
 
+a {
+  color: $coral-red;
+}
+
 .page-content {
   margin-left: 81.5vh;
   margin-top: 25vh;
@@ -143,5 +147,29 @@
   margin-bottom: 10vh;
 }
 
+#jobs {
+  width: 30vw;
+  font-weight: $light-font;
+  margin-bottom: 50vh;
+}
 
+#job-opps {
+  position: absolute;
+  left:3vw;
+  top:70vh;
+}
 
+#dots-2 {
+  width: 50vh;
+  z-index:-1;
+  position: absolute;
+}
+
+#employer-contact {
+  z-index: 100;
+  position: absolute;
+  width: 13vw;
+  font-weight: $light-font;
+  left: 10vw;
+  top:2vh;
+}
