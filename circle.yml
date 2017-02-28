@@ -14,5 +14,5 @@ deployment:
   staging:
     branch: v2
     commands:
-      - turbolift -u $RAXUSER -a $RAXAPIKEY --os-rax-auth $RAXREGION upload -s $HOME/$CIRCLE_PROJECT_REPONAME/www -c $CONTAINER;
+      - turbolift -u $RAXUSER -a $RAXAPIKEY --os-rax-auth $RAXREGION upload --delete-remote -s $HOME/$CIRCLE_PROJECT_REPONAME/www -c $CONTAINER;
 
