@@ -9,10 +9,6 @@
   z-index: 1000;
 }
 
-a {
-  color: $coral-red;
-}
-
 .page-content {
   margin-left: 81.5vh;
   margin-top: 25vh;
@@ -108,8 +104,8 @@ a {
 }
 
 #tnyu-teams {
-  margin: 0 auto;
   font-weight: $light-font;
+  margin-left: 20vw;
 }
 
 .team-name {
@@ -147,10 +143,11 @@ a {
   margin-bottom: 10vh;
 }
 
-#jobs {
+.page-intro {
   width: 30vw;
   font-weight: $light-font;
   margin-bottom: 50vh;
+  font-size: 2vmin;
 }
 
 #job-opps {
@@ -172,4 +169,22 @@ a {
   font-weight: $light-font;
   left: 10vw;
   top:2vh;
+}
+#libraries {
+  margin-left: 22vw;
+  color: $coral-red;
+  font-weight: $light-font;
+}
+
+.lib-title {
+  font-size: 3vmin;
+  font-weight: $bold-font;
+}
+
+.library {
+  margin-bottom: 8vh;
+}
+
+.articles {
+  font-size: 2vmin;
 }
