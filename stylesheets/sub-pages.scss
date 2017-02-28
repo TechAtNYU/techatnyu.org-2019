@@ -1,0 +1,190 @@
+@import "variables";
+
+.page-title {
+  color: $coral-red;
+  position: absolute;
+  font-size: 8vmin;
+  left: 22vw;
+  top: 10vh;
+  z-index: 1000;
+}
+
+.page-content {
+  margin-left: 81.5vh;
+  margin-top: 25vh;
+  text-align: left;
+}
+
+.question-answer {
+  width: 30vw;
+  margin-bottom: 3vh;
+}
+
+.question {
+  font-weight: $bold-font;
+  color: $coral-red;
+  margin-bottom: 2vh;
+  font-size: 2.8vmin;
+}
+
+.answer {
+  font-weight: $light-font;
+  font-size: 1.9vmin;
+  color: black;
+}
+
+.answer a {
+  color: $light-red;
+  text-decoration: underline;
+}
+
+.email-us {
+  width: 30vw;
+  font-weight: $light-font;
+  color: $light-red;
+  font-size: 2.8vmin;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+.email-us a {
+  text-decoration: underline;
+  color: $light-red;
+}
+
+.tech-description {
+  font-weight: $light-font;
+  width: 32vw;
+  font-size: 2vmin;
+  margin-bottom: 15vh;
+}
+
+.events {
+  font-size: 4.5vmin;
+  font-weight: $bold-font;
+  color: $coral-red;
+  margin-bottom: 5vh;
+}
+
+#events-line {
+  border-color: $coral-red;
+  width: 8vw;
+}
+
+#dots {
+  left: 24vw;
+  top: 18vh;
+  position: absolute;
+  width: 50vh;
+  z-index: -1;
+}
+
+#clock {
+  left: -4vw;
+  top: 70vh;
+  position: absolute;
+  width: 28vh;
+  z-index: -1;
+}
+
+#squiggly {
+  left: 2vw;
+  top: 85vh;
+  position: absolute;
+  width: 25vh;
+  z-index: -1;
+}
+
+#comment-img {
+  right: -4vw;
+  top: 205vh;
+  position: absolute;
+  width: 25vh;
+  z-index: -1;
+}
+
+#tnyu-teams-about {
+  font-weight: $light-font;
+  margin-left: 20vw;
+}
+
+.team-name {
+  text-align: right;
+  padding-right: 7vw;
+  color: $coral-red;
+  font-size: 3.5vmin;
+  padding-bottom: 4vw;
+  vertical-align: top;
+}
+
+.team-description {
+  width: 30vw;
+  text-align: left;
+  color: black;
+  font-size: 2vmin;
+  padding-right: 8vw;
+  padding-bottom: 4vw;
+  vert-align: top;
+}
+
+#policy {
+  width: 30vw;
+  font-size: 2vmin;
+  font-weight: $light-font;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+
+}
+
+#anti-harassment {
+  margin-left: 81.5vh;
+  width: 30vw;
+  font-weight: $light-font;
+  margin-bottom: 10vh;
+}
+
+.page-intro {
+  width: 30vw;
+  font-weight: $light-font;
+  margin-bottom: 50vh;
+  font-size: 2vmin;
+}
+
+#job-opps {
+  position: absolute;
+  left:3vw;
+  top:70vh;
+}
+
+#dots-2 {
+  width: 50vh;
+  z-index:-1;
+  position: absolute;
+}
+
+#employer-contact {
+  z-index: 100;
+  position: absolute;
+  width: 13vw;
+  font-weight: $light-font;
+  left: 10vw;
+  top:2vh;
+}
+#libraries {
+  margin-left: 22vw;
+  color: $coral-red;
+  font-weight: $light-font;
+}
+
+.lib-title {
+  font-size: 3vmin;
+  font-weight: $bold-font;
+}
+
+.library {
+  margin-bottom: 8vh;
+}
+
+.articles {
+  font-size: 2vmin;
+}
