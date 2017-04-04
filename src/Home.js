@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'
+import SimpleSlider from './Carousel'
+
 
 
 var EmailForm = React.createClass({
