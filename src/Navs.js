@@ -1,9 +1,15 @@
 /**
  * Created by adisanarula on 2/28/17.
  */
- 
 import React from 'react';
-import constantLinks from './Constants';
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink } from 'react-router'
+
+const constantLinks = {
+    facebook: "https://www.facebook.com/TechatNYU/",
+    twitter: "https://twitter.com/techatnyu",
+    medium: "https://medium.com/@TechatNYU",
+    instagram: "https://www.instagram.com/techatnyu/",
+}; 
 
 var Header = React.createClass ({
 
