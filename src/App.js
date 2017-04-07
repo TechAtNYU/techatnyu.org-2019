@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink } from 'react-router'
+import Navs from './Navs';
 import Home from './Home';
 import About from './About';
 import FAQ from './FAQ';
@@ -36,6 +37,7 @@ class App extends Component {
                     <Route path = 'faq' component={FAQ} />
                     <Route path = 'jobs' component={Jobs} />
                     <Route path = 'library' component={Library} />
+                    <Route path = '*' component={Navs.notFound} />
                 </Route>
             </Router>
         )

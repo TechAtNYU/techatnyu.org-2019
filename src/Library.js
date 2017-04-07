@@ -11,7 +11,6 @@ const marginStyle = {
 };
 
 var Libraries = React.createClass({
-
     render: function(){
         return (
             <div id="libraries">

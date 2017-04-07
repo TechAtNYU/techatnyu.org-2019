@@ -31,9 +31,17 @@ var Footer = React.createClass({
     }
 });
 
+const NotFound = () => (
+    <div>
+        <img id="dots" src="/img/dots.png"/>
+        <h1 className="page-title">404. Page Not Found</h1>
+    </div>
+)
+
 const Navs =  {
     links: constantLinks,
-    footer: Footer
+    footer: Footer,
+    notFound: NotFound,
 }
 
 export default Navs;
