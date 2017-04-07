@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import FAQ from './FAQ';
 import Jobs from './Jobs';
+import Library from './Library';
 
 
 const Nav = () => (
@@ -34,6 +35,7 @@ class App extends Component {
                     <Route path='about' component={About} />
                     <Route path = 'faq' component={FAQ} />
                     <Route path = 'jobs' component={Jobs} />
+                    <Route path = 'library' component={Library} />
                 </Route>
             </Router>
         )
