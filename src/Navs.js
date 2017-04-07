@@ -8,7 +8,8 @@ const constantLinks = {
     twitter: "https://twitter.com/techatnyu",
     medium: "https://medium.com/@TechatNYU",
     instagram: "https://www.instagram.com/techatnyu/",
-    rsvp: "http://rsvp.techatnyu.org/"
+    rsvp: "http://rsvp.techatnyu.org/",
+    resumes: "https://balloon.io/tnyuresumes"
 }; 
 
 var Footer = React.createClass({

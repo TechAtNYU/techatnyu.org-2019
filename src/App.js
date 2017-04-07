@@ -3,6 +3,7 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink
 import Home from './Home';
 import About from './About';
 import FAQ from './FAQ';
+import Jobs from './Jobs';
 
 
 const Nav = () => (
@@ -32,6 +33,7 @@ class App extends Component {
                     <IndexRoute component={Home} />
                     <Route path='about' component={About} />
                     <Route path = 'faq' component={FAQ} />
+                    <Route path = 'jobs' component={Jobs} />
                 </Route>
             </Router>
         )
