@@ -2,7 +2,6 @@
  * Created by adisanarula on 2/28/17.
  */
 import React from 'react';
-import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink } from 'react-router'
 
 const constantLinks = {
     facebook: "https://www.facebook.com/TechatNYU/",
@@ -10,25 +9,6 @@ const constantLinks = {
     medium: "https://medium.com/@TechatNYU",
     instagram: "https://www.instagram.com/techatnyu/",
 }; 
-
-var Header = React.createClass ({
-
-    render: function () {
-        return(
-            <nav className="navbar-header">
-                <div className="navbar-content">
-                    <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li ><a href="about.html">about</a></li>
-                        <li><a href="faq.html">faq</a></li>
-                        <li><a href="jobs.html">jobs</a></li>
-                        <li><a href="library.html">library</a></li>
-                    </ul>
-                </div>
-            </nav>
-        );
-    }
-});
 
 var Footer = React.createClass({
     render: function() {
@@ -49,9 +29,4 @@ var Footer = React.createClass({
     }
 });
 
-const Navigation = {
-    header:Header,
-    footer: Footer
-}
-
-export default Navigation;
+export default Footer;

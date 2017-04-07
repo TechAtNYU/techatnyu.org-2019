@@ -74,6 +74,7 @@ body {
   text-indent: 2vmin;
   font-weight: $light-font;
   vertical-align: bottom;
+  color: $light-grey;
 }
 
 #signup-form button {
@@ -83,9 +84,10 @@ body {
   text-shadow: none !important;
   border: none !important;
   box-shadow: none !important;
-  width: 3.2vw;
-  height: 5.3vh;
+  width: 3.0vw;
+  height: 5.4vh;
   font-size: 2.5vmin;
+  vertical-align: bottom;
 
 }
 
