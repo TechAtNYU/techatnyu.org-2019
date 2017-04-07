@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink } from 'react-router'
 import Home from './Home';
+import About from './About'
 
 
 const Nav = () => (
@@ -28,6 +29,7 @@ class App extends Component {
             <Router history={hashHistory}>
                 <Route path="/" component = {Container}>
                     <IndexRoute component={Home} />
+                    <Route path='about' component={About} />
                 </Route>
             </Router>
         )
