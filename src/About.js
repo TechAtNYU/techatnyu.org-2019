@@ -3,7 +3,8 @@
  */
 
 import React from 'react';
-import Footer from './Navs'
+import Navs from './Navs'
+import {Link} from 'react-router';
 
 const fontStyle = {
     fontSize: "2vmin"
@@ -111,7 +112,7 @@ var About = React.createClass({
                         anti-harrassment policy. <a href="anti.html" style={colorStyle}>Read about the policy.</a></p>
                 </div>
                 <footer id= "footer">
-                    <Footer/>
+                    <Navs.footer/>
                 </footer>
             </div>
         );

@@ -1,6 +1,6 @@
 import React from 'react'
 import SimpleSlider from './Carousel'
-import Footer from './Navs'
+import Navs from './Navs'
 
 
 var EmailForm = React.createClass({
@@ -56,7 +56,7 @@ var Home = React.createClass({
 			    </div>
 			    <h2 id="tnyu-description"> We are NYC's largest student-run organization of coders, designers, and builders. </h2>
 			    <footer id= "footer">
-			    	<Footer/>
+			    	<Navs.footer/>
 			    </footer>
 	        </div>
 	  );

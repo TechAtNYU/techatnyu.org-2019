@@ -8,6 +8,7 @@ const constantLinks = {
     twitter: "https://twitter.com/techatnyu",
     medium: "https://medium.com/@TechatNYU",
     instagram: "https://www.instagram.com/techatnyu/",
+    rsvp: "http://rsvp.techatnyu.org/"
 }; 
 
 var Footer = React.createClass({
@@ -29,4 +30,9 @@ var Footer = React.createClass({
     }
 });
 
-export default Footer;
+const Navs =  {
+    links: constantLinks,
+    footer: Footer
+}
+
+export default Navs;
