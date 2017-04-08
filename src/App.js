@@ -31,7 +31,7 @@ const Container = (props) => <div>
 class App extends Component {
     render() {
         return (
-            <Router history={hashHistory}>
+            <Router onUpdate ={()=> window.scrollTo(0,0)} history={hashHistory}>
                 <Route path="/" component = {Container}>
                     <IndexRoute component={Home} />
                     <Route path='about' component={About} />
