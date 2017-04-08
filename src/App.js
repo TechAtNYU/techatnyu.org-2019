@@ -6,6 +6,7 @@ import About from './About';
 import FAQ from './FAQ';
 import Jobs from './Jobs';
 import Library from './Library';
+import Policy from './Policy';
 
 
 const Nav = () => (
@@ -37,6 +38,7 @@ class App extends Component {
                     <Route path = 'faq' component={FAQ} />
                     <Route path = 'jobs' component={Jobs} />
                     <Route path = 'library' component={Library} />
+                    <Route path = 'policy' component={Policy} />
                     <Route path = '*' component={Navs.notFound} />
                 </Route>
             </Router>

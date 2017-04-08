@@ -27,7 +27,7 @@ const colorStyle = {
     color: "#f05158"
 };
 
-// TODO: How to link to another page via route
+// TODO: Change link color
 
 const Content = () => (
     <div className="page-content">
@@ -36,7 +36,7 @@ const Content = () => (
             Behind the operations of Tech@NYU is the Board, a group of students
             that runs events focused on coding, gaming, design, business, entrepreneurship, and more, to foster a fun and inclusive tech community in NYC. <br/><br/>
             These events are held throughout the academic year and are open to students of all backgrounds. We’d love see you! <br/><br/>
-            If you have any questions, head to our <a className="email-us" style={fontStyle} href="faq.html">FAQ</a> or drop us a line at <a className="email-us" href="mailto:hello@techatnyu.org" style={fontStyle}>hello@techatnyu.org</a>.
+            If you have any questions, head to our <Link to="/faq" style={colorStyle}> FAQ</Link> or drop us a line at <a className="email-us" href="mailto:hello@techatnyu.org" style={fontStyle}>hello@techatnyu.org</a>.
         </div>
         <div className="events">events</div>
         <div style = {marginStyle}  className="tech-description">
@@ -109,7 +109,7 @@ var About = React.createClass({
                 <div id="anti-harassment" >
                     <h1 className="events">  anti-harassment policy </h1>
                     <p style={fontStyle}>All Tech@NYU events and appearances are covered by a strict
-                        anti-harrassment policy. <a href="anti.html" style={colorStyle}>Read about the policy.</a></p>
+                        anti-harrassment policy. <Link to="/anti" style={colorStyle}>Read about the policy</Link>.</p>
                 </div>
                 <footer id= "footer">
                     <Navs.footer/>

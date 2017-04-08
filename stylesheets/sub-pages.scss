@@ -9,6 +9,16 @@
   z-index: 1000;
 }
 
+.not-found {
+  color: $coral-red;
+  position: absolute;
+  font-size: 8vmin;
+  left: 22vw;
+  top: 10vh;
+  z-index: 1000;
+  font-weight: $light-font;
+}
+
 .page-content {
   margin-left: 81.5vh;
   margin-top: 25vh;
