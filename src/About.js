@@ -109,7 +109,7 @@ var About = React.createClass({
                 <div id="anti-harassment" >
                     <h1 className="events">  anti-harassment policy </h1>
                     <p style={fontStyle}>All Tech@NYU events and appearances are covered by a strict
-                        anti-harrassment policy. <Link to="/anti" style={colorStyle}>Read about the policy</Link>.</p>
+                        anti-harrassment policy. <Link to="/policy" style={colorStyle}>Read about the policy</Link>.</p>
                 </div>
                 <footer id= "footer">
                     <Navs.footer/>
