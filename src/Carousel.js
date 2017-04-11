@@ -7,13 +7,32 @@ import Slider from 'react-slick';
 // TODO:: Create dynamic event cards
 // TODO:: Custom arrows
 
+const eventURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
+
 class SimpleSlider extends Component {
 
     constructor(props) {
         super(props)
+        this.state = {
+            events:[]
+        };
     }
 
-    
+    componentDidMount() {
+        fetch(eventURL, {
+            method:'GET',
+
+        })
+            .then((response) => response.json())
+            .then((responseData) => {
+                this.setState({
+                    events: responseData.data
+                });
+                this.state.events.forEach(function(event){
+                    console.log(event.attributes.title);
+                });
+            });
+    }
 
     render () {
         var settings = {
