@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import Navs from './Navs';
+import Constants from './Constants';
 
 
 const marginStyle = {
@@ -59,7 +59,7 @@ class Library extends Component {
                 </div>
                 <Libraries/>
                 <footer id = "footer">
-                    <Navs.footer/>
+                    <Constants.footer/>
                 </footer>
             </div>
         );

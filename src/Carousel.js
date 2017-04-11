@@ -9,6 +9,12 @@ import Slider from 'react-slick';
 
 class SimpleSlider extends Component {
 
+    constructor(props) {
+        super(props)
+    }
+
+    
+
     render () {
         var settings = {
             dots: false,

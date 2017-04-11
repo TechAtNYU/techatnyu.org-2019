@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink } from 'react-router'
-import Navs from './Navs';
+import Constants from './Constants';
 import Home from './Home';
 import About from './About';
 import FAQ from './FAQ';
@@ -39,7 +39,7 @@ class App extends Component {
                     <Route path = 'jobs' component={Jobs} />
                     <Route path = 'library' component={Library} />
                     <Route path = 'policy' component={Policy} />
-                    <Route path = '*' component={Navs.notFound} />
+                    <Route path = '*' component={Constants.notFound} />
                 </Route>
             </Router>
         )

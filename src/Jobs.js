@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react'
-import Navs from './Navs';
+import Constants from './Constants';
 
 const colorStyle = {
     color: "#f05158"
@@ -21,7 +21,7 @@ class Jobs extends Component{
                         Looking for an internship or more work experience in the tech industry?
                         Career opportunities will be posted here and updated reguarly. <br/><br/>
                         If you’re interested in hearing about job opportunities from our sponsors
-                        or the companies we host events with, <a href={Navs.links.resumes} target="__blank" style={colorStyle}>drop your resume here </a>!
+                        or the companies we host events with, <a href={Constants.links.resumes} target="__blank" style={colorStyle}>drop your resume here </a>!
                     </div>
                 </div>
                 <div id="job-opps">
@@ -29,7 +29,7 @@ class Jobs extends Component{
                     <div id="employer-contact">If you’re an employer looking to post a job opportunity here, please contact <a href="mailto:bizdev@techatnyu.org" style={colorStyle}>bizdev@techatnyu.org</a>. </div>
                 </div>
                 <footer id = "footer">
-                    <Navs.footer/>
+                    <Constants.footer/>
                 </footer>
             </div>
         );

@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import Navs from './Navs';
+import Constants from './Constants';
 
 const fontStyle = {
     fontSize: "2vmin"
@@ -81,7 +81,7 @@ class Policy extends Component{
                     </div>
                 </div>
                 <footer id="footer">
-                    <Navs.footer/>
+                    <Constants.footer/>
                 </footer>
             </div>
         );

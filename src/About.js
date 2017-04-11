@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import Navs from './Navs'
+import Constants from './Constants'
 import {Link} from 'react-router';
 
 const fontStyle = {
@@ -111,7 +111,7 @@ class About extends Component {
                         anti-harrassment policy. <Link to="/policy" style={colorStyle}>Read about the policy</Link>.</p>
                 </div>
                 <footer id= "footer">
-                    <Navs.footer/>
+                    <Constants.footer/>
                 </footer>
             </div>
         );

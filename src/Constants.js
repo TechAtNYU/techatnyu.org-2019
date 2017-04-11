@@ -38,10 +38,10 @@ const NotFound = () => (
     </div>
 )
 
-const Navs =  {
+const Constants =  {
     links: constantLinks,
     footer: Footer,
     notFound: NotFound,
 }
 
-export default Navs;
+export default Constants;

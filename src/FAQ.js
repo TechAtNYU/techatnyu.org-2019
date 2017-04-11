@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import Navs from './Navs'
+import Constants from './Constants'
 
 // TODO: Change html links
 
@@ -21,22 +21,22 @@ class FAQ extends Component {
                     <div className="question-answer">
                         <div className="question"> How much experience do I need to attend or participate? </div>
                         <div className="answer"> Most of our events are beginner-friendly, but additional details about the level of the workshop can usually be found on the event's facebook page. Check out
-                            our <a href={Navs.links.facebook} target="_blank">Facebook</a> page here for more information about the upcoming event. </div>
+                            our <a href={Constants.links.facebook} target="_blank">Facebook</a> page here for more information about the upcoming event. </div>
                     </div>
                     <div className="question-answer">
                         <div className="question"> How do I find out about these events? </div>
                         <div className="answer"> Join our mailing list and follow us on our social media channels:
-                            <a href={Navs.links.twitter} target="_blank">Twitter</a>, <a href={Navs.links.instagram} target="_blank">Instagram</a>, <a href={Navs.links.facebook} target="_blank">Facebook</a>
+                            <a href={Constants.links.twitter} target="_blank">Twitter</a>, <a href={Constants.links.instagram} target="_blank">Instagram</a>, <a href={Constants.links.facebook} target="_blank">Facebook</a>
                         </div>
                     </div>
                     <div className="question-answer">
                         <div className="question"> Where are the events held? </div>
-                        <div className="answer"> Most of our events are held on NYU's Washington Square Campus. These events usually take place at the Leslie eLab or the LaGuardia Co-op, but please check the event's <a href={Navs.links.facebook} target="_blank">Facebook</a> page for the exact location.
+                        <div className="answer"> Most of our events are held on NYU's Washington Square Campus. These events usually take place at the Leslie eLab or the LaGuardia Co-op, but please check the event's <a href={Constants.links.facebook} target="_blank">Facebook</a> page for the exact location.
                         </div>
                     </div>
                     <div className="question-answer">
                         <div className="question"> Are these events free? Do I need tickets to attend events? </div>
-                        <div className="answer"> Yes! Our events are usually free for both NYU students and the public, and does not require a ticket to attend but we encourage you to RSVP <a href={Navs.links.rsvp} target="_blank">here</a>. However, some of our events might require a ticket to attend. Please check the event's <a href={Navs.links.facebook} target="_blank">Facebook</a> page for details.
+                        <div className="answer"> Yes! Our events are usually free for both NYU students and the public, and does not require a ticket to attend but we encourage you to RSVP <a href={Constants.links.rsvp} target="_blank">here</a>. However, some of our events might require a ticket to attend. Please check the event's <a href={Constants.links.facebook} target="_blank">Facebook</a> page for details.
                         </div>
                     </div>
                     <div className="question-answer">
@@ -56,7 +56,7 @@ class FAQ extends Component {
                     </div>
                 </div>
                 <footer id = "footer">
-                    <Navs.footer/>
+                    <Constants.footer/>
                 </footer>
             </div>
         );

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SimpleSlider from './Carousel'
-import Navs from './Navs'
+import Constants from './Constants'
 
 
 class EmailForm extends Component {
@@ -57,7 +57,7 @@ class Home extends Component {
 			    </div>
 			    <h2 id="tnyu-description"> We are NYC's largest student-run organization of coders, designers, and builders. </h2>
 			    <footer id= "footer">
-			    	<Navs.footer/>
+			    	<Constants.footer/>
 			    </footer>
 	        </div>
 	  );
