@@ -12,7 +12,7 @@ body {
   z-index: 9999;
   width: 100vw;
   height: 7.5vh;
-  background-color: #f05158;
+  background-color: $coral-red;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -47,7 +47,7 @@ body {
   font-weight: $bold-font;
   margin-top: 12vh;
   text-align: center;
-  color: #f05158;
+  color: $coral-red;
   font-size: 5.5vmin;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 #signup-form p {
-  color: #f05158;
+  color: $coral-red;
   font-weight: $light-font;
   margin-bottom: 0vh;
   font-size: 2.2vmin;
@@ -139,12 +139,37 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
+.event-card:hover {
+  background-color: $coral-red;
+  color:white;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
+.event-card:hover .event-title {
+  color:white;
+}
+
+.event-card:hover .event-team {
+  color:white;
+}
+
+.event-card:hover .event-date {
+  color:white;
+}
+
+.event-card:hover .line-break {
+  border-color:white;
+}
+
 .event-card hr {
-  border-color: $border-grey;
   width: 13vw;
   position: absolute;
   bottom: 4vh;
   margin-left: 1.3vw;
+  border: none;
+  height: 1px;
+  color: $border-grey;
+  background-color: $border-grey;
 }
 
 .event-title {
@@ -209,8 +234,10 @@ body {
 #footer hr {
   margin-top: 4vh;
   margin-bottom: 2vh;
-  border-color: $border-grey;
+  height: 1px;
   width: 56vw;
+  border: none;
+  background-color: $border-grey;
 }
 
 #footer-content{

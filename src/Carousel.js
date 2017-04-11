@@ -5,7 +5,6 @@ import React, {Component} from 'react';
 import Slider from 'react-slick';
 import Constants from './Constants';
 
-// TODO:: Create dynamic event cards
 // TODO:: Custom arrows
 
 const eventURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
@@ -15,16 +14,14 @@ class Event extends Component {
         super(props);
     }
     render() {
+        const date = new Date(this.props.event.attributes.startDateTime);
         return (
             <div className="event-card">
                 <p className="event-title"> {this.props.event.attributes.title} </p>
                 <p className="event-team"> {Constants.teams[this.props.event.relationships.teams.data[0].id]}</p>
-                <p className="event-description">
-                    Joel Kemp is a software engineer at Spotify.
-                    The purpose of this workshop is to showcase the basics of the server-side language.
-                </p>
-                <hr></hr>
-                <p className="event-date"> 10.12 </p>
+                <p className="event-description">{this.props.event.attributes.description}</p>
+                <hr className="line-break"></hr>
+                <p className="event-date"> {date.getMonth() + 1}.{date.getDate()} </p>
             </div>
         )
     }

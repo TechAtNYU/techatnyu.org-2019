@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 
-const constantLinks = {
+const Constant = {
     facebook: "https://www.facebook.com/TechatNYU/",
     twitter: "https://twitter.com/techatnyu",
     medium: "https://medium.com/@TechatNYU",
@@ -12,7 +12,7 @@ const constantLinks = {
     resumes: "https://balloon.io/tnyuresumes"
 };
 
-const teamsMap  = {
+const TeamIDs  = {
     '53f54dd98d1e62ff12539dc1': 'Hack Days',
     '53f54dd98d1e62ff12539dc2': 'After Hours',
     '53f99d48c66b44cf6f8f6d81': 'Demo Days',
@@ -32,10 +32,10 @@ class Footer extends Component {
                 <div id="footer-content">
                     <div id="copyright"> ©Tech@NYU, 2016 </div>
                     <div id="social-handles">
-                        <a href = {constantLinks.facebook} target="_blank">Facebook</a>
-                        <a href= {constantLinks.twitter} target="_blank">Twitter</a>
-                        <a href= {constantLinks.medium} target="_blank">Medium</a>
-                        <a href= {constantLinks.instagram} target="_blank">Instagram</a>
+                        <a href = {Constant.facebook} target="_blank">Facebook</a>
+                        <a href= {Constant.twitter} target="_blank">Twitter</a>
+                        <a href= {Constant.medium} target="_blank">Medium</a>
+                        <a href= {Constant.instagram} target="_blank">Instagram</a>
                     </div>
                 </div>
             </div>
@@ -51,10 +51,10 @@ const NotFound = () => (
 )
 
 const Constants =  {
-    links: constantLinks,
+    links: Constant,
     footer: Footer,
     notFound: NotFound,
-    teams: teamsMap
+    teams: TeamIDs
 }
 
 export default Constants;

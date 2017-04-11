@@ -40,8 +40,7 @@ class Home extends Component {
 	            <div id="tnyu-title">
 	            	<h1>tech@nyu</h1>
 			    </div>
-			    <EmailForm/>
-
+                <EmailForm/>
 			    <div id="slider-wrapper">
 			        <nav id="tnyu-teams">
 			            <ul>
