@@ -2,7 +2,7 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import Navs from './Navs';
 
 
@@ -10,8 +10,8 @@ const marginStyle = {
     marginBottom: "10vh"
 };
 
-var Libraries = React.createClass({
-    render: function(){
+class Libraries extends Component {
+    render(){
         return (
             <div id="libraries">
                 <div className="library">
@@ -41,11 +41,11 @@ var Libraries = React.createClass({
             </div>
         );
     }
-});
+}
 
-var Library = React.createClass({
+class Library extends Component {
 
-    render: function() {
+    render() {
         return (
             <div>
                 <img id="dots" src="/img/dots.png"/>
@@ -64,6 +64,6 @@ var Library = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Library;

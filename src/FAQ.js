@@ -2,15 +2,13 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import Navs from './Navs'
-
 
 // TODO: Change html links
 
-var FAQ = React.createClass({
-
-    render: function() {
+class FAQ extends Component {
+    render() {
         return (
             <div>
                 <img id="dots" src="/img/dots.png"/>
@@ -61,9 +59,8 @@ var FAQ = React.createClass({
                     <Navs.footer/>
                 </footer>
             </div>
-
         );
     }
-});
+}
 
 export default FAQ;

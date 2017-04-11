@@ -1,7 +1,7 @@
 /**
  * Created by adisanarula on 2/28/17.
  */
-import React from 'react';
+import React, {Component} from 'react';
 
 const constantLinks = {
     facebook: "https://www.facebook.com/TechatNYU/",
@@ -12,8 +12,8 @@ const constantLinks = {
     resumes: "https://balloon.io/tnyuresumes"
 }; 
 
-var Footer = React.createClass({
-    render: function() {
+class Footer extends Component {
+    render () {
         return(
             <div>
                 <hr></hr>
@@ -29,7 +29,7 @@ var Footer = React.createClass({
             </div>
         );
     }
-});
+}
 
 const NotFound = () => (
     <div>

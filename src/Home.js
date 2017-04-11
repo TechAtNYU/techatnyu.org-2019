@@ -1,23 +1,24 @@
-import React from 'react'
+import React, {Component} from 'react'
 import SimpleSlider from './Carousel'
 import Navs from './Navs'
 
 
-var EmailForm = React.createClass({
-	getInitialState: function() {
-	    return {
-	      value: "Type your email"
-	    };
-  	},
-  	handleChange: function(evt) {
+class EmailForm extends Component {
+  	constructor(props) {
+		super(props);
+		this.state = {
+            value: "Type your email"
+		};
+	}
+  	handleChange (evt) {
 	    this.setState({
 	      value: evt.target.value
 	    });
-	},
-	submitChange: function(email) {
+	}
+	submitChange (email) {
 		console.log(email); // TODO: Connect to backend
-	},
-	render: function() {
+	}
+	render () {
 		return(
 			<div id="signup-form">
 			        <p> Be the first to know about upcoming events and opportunities. </p><br/>
@@ -30,10 +31,10 @@ var EmailForm = React.createClass({
 	    	</div>
 		);
 	}
-});
+}
 
-var Home = React.createClass({
-    render: function() {
+class Home extends Component {
+    render () {
     	return (
 	        <div>
 	            <div id="tnyu-title">
@@ -61,6 +62,6 @@ var Home = React.createClass({
 	        </div>
 	  );
     }
-});
+}
 
 export default Home;

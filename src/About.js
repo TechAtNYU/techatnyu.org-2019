@@ -2,7 +2,7 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import Navs from './Navs'
 import {Link} from 'react-router';
 
@@ -27,7 +27,6 @@ const colorStyle = {
     color: "#f05158"
 };
 
-// TODO: Change link color
 
 const Content = () => (
     <div className="page-content">
@@ -94,9 +93,9 @@ const Teams = () => (
 )
 
 
-var About = React.createClass({
+class About extends Component {
 
-    render: function() {
+    render() {
         return (
             <div>
                 <h1 className="page-title">about</h1>
@@ -117,6 +116,6 @@ var About = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default About;

@@ -2,16 +2,16 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React from 'react';
+import React, { Component } from 'react'
 import Navs from './Navs';
 
 const colorStyle = {
     color: "#f05158"
 };
 
-var Jobs = React.createClass({
+class Jobs extends Component{
 
-    render: function() {
+    render() {
         return (
             <div>
                 <img id="dots" src="/img/dots.png"/>
@@ -34,7 +34,7 @@ var Jobs = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Jobs;
 

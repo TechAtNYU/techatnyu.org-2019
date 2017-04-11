@@ -1,15 +1,15 @@
 /**
  * Created by adisanarula on 2/24/17.
  */
-import React from 'react';
+import React, {Component} from 'react';
 import Slider from 'react-slick';
 
 // TODO:: Create dynamic event cards
 // TODO:: Custom arrows
 
-var SimpleSlider = React.createClass({
+class SimpleSlider extends Component {
 
-    render: function () {
+    render () {
         var settings = {
             dots: false,
             slidesToShow: 3,
@@ -72,7 +72,7 @@ var SimpleSlider = React.createClass({
             </div>
         );
     }
-});
+}
 
 
 export default SimpleSlider;

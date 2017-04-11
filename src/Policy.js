@@ -2,16 +2,16 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import Navs from './Navs';
 
 const fontStyle = {
     fontSize: "2vmin"
 };
 
-var Policy = React.createClass({
+class Policy extends Component{
 
-    render: function() {
+    render() {
         return (
             <div>
                 <img id="dots" src="/img/dots.png"/>
@@ -86,6 +86,6 @@ var Policy = React.createClass({
             </div>
         );
     }
-});
+}
 
 export default Policy;
