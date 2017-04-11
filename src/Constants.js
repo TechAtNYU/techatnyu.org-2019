@@ -10,7 +10,19 @@ const constantLinks = {
     instagram: "https://www.instagram.com/techatnyu/",
     rsvp: "http://rsvp.techatnyu.org/",
     resumes: "https://balloon.io/tnyuresumes"
-}; 
+};
+
+const teamsMap  = {
+    '53f54dd98d1e62ff12539dc1': 'Hack Days',
+    '53f54dd98d1e62ff12539dc2': 'After Hours',
+    '53f99d48c66b44cf6f8f6d81': 'Demo Days',
+    '53f99d6bc66b44cf6f8f6d82': 'Design Days',
+    '54e8c420bc61fd4096c01048': 'Infrastructure',
+    '5440609d6b0287336dfc51cf': 'Startup Week',
+    '53f99d8fc66b44cf6f8f6d83': 'Business Development',
+    '53f54dd98d1e62ff12539dc3': 'Marketing',
+    '56410d72e24ad83b0635516f': 'Game Days'
+};
 
 class Footer extends Component {
     render () {
@@ -42,6 +54,7 @@ const Constants =  {
     links: constantLinks,
     footer: Footer,
     notFound: NotFound,
+    teams: teamsMap
 }
 
 export default Constants;

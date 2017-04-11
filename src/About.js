@@ -47,48 +47,50 @@ const Content = () => (
 
 const Teams = () => (
     <table id="tnyu-teams-about">
-        <tr>
-            <td className="team-name">After Hours</td>
-            <td className = "team-description">Held weekly. Gives students an opportunity to link up, eat pizza, and
-                start creating awesome things! Events range from mixers to guest lectures.
-                All experience levels are welcome!</td>
-        </tr>
-        <tr>
-            <td className="team-name">Demo Days</td>
-            <td className = "team-description">Held monthly. Gathers a community of students who create things,
-                providing a platform for student builders to present their work, celebrate
-                their creations, and inspire other students to build projects they care
-                about. <a href="http://demodays.co" target = "__blank" className="email-us" style={fontStyle}>Apply to demo your project here!</a></td>
-        </tr>
-        <tr>
-            <td className="team-name">Design Days</td>
-            <td className = "team-description">Held bi-monthly. Brings in design professionals from around the country
-                to give workshops or talks on various design topics.</td>
-        </tr>
-        <tr>
-            <td className="team-name">Freshman Circuit</td>
-            <td className = "team-description">Open to freshman only. Tours NYC startups and meets with startup
-                employees to learn about what they do. This is a great way to explore
-                your interests and how they fit into the industry! Spaces are limited.
-                Applications open on September 1st every year.</td>
-        </tr>
-        <tr>
-            <td className="team-name">Game Days</td>
-            <td className = "team-description">Held monthly. Gathers students from all over New York City to explore
-                digital and physical game design, meet new people, express themselves creatively, and bring their ideas to fruition! </td>
-        </tr>
-        <tr>
-            <td className="team-name">Hack Days</td>
-            <td className = "team-description">Held bi-monthly. Brings in guest speakers to host lectures or workshops
-                about programming and web technologies. We cover everything from Angular to Zepto and all experience levels are welcome!</td>
-        </tr>
-        <tr>
-            <td className="team-name">Startup Week</td>
-            <td className = "team-description">Held once every semester. This is Tech@NYU’s flagship event, comprising a week-long series of events and
-                workshops that celebrate all things design, hacking,
-                entrepreneurship, and technology, wrapping up with a keynote speech
-                by the CEO of an NYC Startup.</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td className="team-name">After Hours</td>
+                <td className = "team-description">Held weekly. Gives students an opportunity to link up, eat pizza, and
+                    start creating awesome things! Events range from mixers to guest lectures.
+                    All experience levels are welcome!</td>
+            </tr>
+            <tr>
+                <td className="team-name">Demo Days</td>
+                <td className = "team-description">Held monthly. Gathers a community of students who create things,
+                    providing a platform for student builders to present their work, celebrate
+                    their creations, and inspire other students to build projects they care
+                    about. <a href="http://demodays.co" target = "__blank" className="email-us" style={fontStyle}>Apply to demo your project here!</a></td>
+            </tr>
+            <tr>
+                <td className="team-name">Design Days</td>
+                <td className = "team-description">Held bi-monthly. Brings in design professionals from around the country
+                    to give workshops or talks on various design topics.</td>
+            </tr>
+            <tr>
+                <td className="team-name">Freshman Circuit</td>
+                <td className = "team-description">Open to freshman only. Tours NYC startups and meets with startup
+                    employees to learn about what they do. This is a great way to explore
+                    your interests and how they fit into the industry! Spaces are limited.
+                    Applications open on September 1st every year.</td>
+            </tr>
+            <tr>
+                <td className="team-name">Game Days</td>
+                <td className = "team-description">Held monthly. Gathers students from all over New York City to explore
+                    digital and physical game design, meet new people, express themselves creatively, and bring their ideas to fruition! </td>
+            </tr>
+            <tr>
+                <td className="team-name">Hack Days</td>
+                <td className = "team-description">Held bi-monthly. Brings in guest speakers to host lectures or workshops
+                    about programming and web technologies. We cover everything from Angular to Zepto and all experience levels are welcome!</td>
+            </tr>
+            <tr>
+                <td className="team-name">Startup Week</td>
+                <td className = "team-description">Held once every semester. This is Tech@NYU’s flagship event, comprising a week-long series of events and
+                    workshops that celebrate all things design, hacking,
+                    entrepreneurship, and technology, wrapping up with a keynote speech
+                    by the CEO of an NYC Startup.</td>
+            </tr>
+        </tbody>
     </table>
 )
 
