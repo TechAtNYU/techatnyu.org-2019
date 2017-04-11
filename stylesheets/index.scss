@@ -73,7 +73,7 @@ body {
   font-size: 2vmin;
   text-indent: 2vmin;
   font-weight: $light-font;
-  vertical-align: bottom;
+  vertical-align: top;
   color: $light-grey;
 }
 
@@ -87,8 +87,8 @@ body {
   width: 3.0vw;
   height: 5.4vh;
   font-size: 2.5vmin;
-  vertical-align: bottom;
-
+  vertical-align: top;
+  margin-top: 0.2vh;
 }
 
 #signup-form button:hover {
@@ -161,6 +161,10 @@ body {
   border-color:white;
 }
 
+.event-card:hover .event-rsvp a{
+  color:white;
+}
+
 .event-card hr {
   width: 13vw;
   position: absolute;
@@ -186,23 +190,36 @@ body {
   font-weight: $light-font;
   color: $light-red;
   text-align: left;
-  text-indent: 1.3vw;
+  margin-left: 1vw;
 }
 
 .event-description {
   text-align: left;
   font-weight: $light-font;
-  margin-left: 1.3vw;
-  margin-right: 1vw;
+  margin-left: 1vw;
+  margin-right: 1.3vw;
   font-size: 1.75vmin;
 }
 
 .event-date {
   position: absolute;
-  margin-left: 1.3vw;
+  left: 1.3vw;
   bottom: 0;
   font-weight: $light-font;
   color: $light-grey;
+  font-size: 1.8vmin;
+}
+
+.event-rsvp {
+  position: absolute;
+  bottom: 0;
+  right: 1.7vw;
+}
+
+.event-rsvp a{
+  color: $coral-red;
+  text-decoration: none;
+  font-weight: $light-font;
   font-size: 1.8vmin;
 }
 
@@ -274,16 +291,16 @@ hr {
   border: 0.4px solid rgb(128, 128, 128);
 }
 
-// TODO:: override the default arrows
-
 .slick-prev:before {
   color: $coral-red;
   font-size: 3vmin;
+  font-weight: 800;
 }
 
 .slick-next:before {
   color: $coral-red;
   font-size: 3vmin;
+  font-weight: 800;
 }
 
 .active {

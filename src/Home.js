@@ -34,6 +34,13 @@ class EmailForm extends Component {
 }
 
 class Home extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            selectTeam: "All" // default
+        };
+    }
     render () {
     	return (
 	        <div>

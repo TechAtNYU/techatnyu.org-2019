@@ -22,6 +22,7 @@ class Event extends Component {
                 <p className="event-description">{this.props.event.attributes.description}</p>
                 <hr className="line-break"></hr>
                 <p className="event-date"> {date.getMonth() + 1}.{date.getDate()} </p>
+                <p className="event-rsvp"><a href={Constants.links.rsvp} target="_blank">RSVP</a></p>
             </div>
         )
     }
@@ -54,18 +55,18 @@ class SimpleSlider extends Component {
         let listEvents = [];
 
         if(this.state.events.length > 0) {
-            for (var i = this.state.events.length-1; i >= 0; i--) {
+            for (let i = this.state.events.length-1; i >= 0; i--) {
                 listEvents.push(<div key={i}><Event event={this.state.events[i]} /></div>);
             }
         } else {
-            listEvents.push(<div></div>);
+            listEvents.push(<div key="0"></div>);
         }
 
-        var settings = {
+        let settings = {
             dots: false,
             slidesToShow: 3,
             arrows:true,
-            // nextArrow: <SampleNextArrow/>,
+            //nextArrow: <NextArrow/>,
             // prevArrow: <SamplePrevArrow/>
         };
         return (
