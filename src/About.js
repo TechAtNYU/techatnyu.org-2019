@@ -27,6 +27,7 @@ const colorStyle = {
     color: "#f05158"
 };
 
+const memberURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
 
 const Content = () => (
     <div className="page-content">
@@ -96,6 +97,13 @@ const Teams = () => (
 
 
 class About extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            boardMembers:[]
+        }
+    }
 
     render() {
         return (

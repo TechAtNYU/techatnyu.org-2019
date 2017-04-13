@@ -45,14 +45,14 @@ body {
 
 #tnyu-title {
   font-weight: $bold-font;
-  margin-top: 12vh;
+  margin-top: 15vh;
   text-align: center;
   color: $coral-red;
   font-size: 5.5vmin;
 }
 
 #tnyu-title h1 {
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
 }
 
 #signup-form {
@@ -98,7 +98,7 @@ body {
 #slider-wrapper {
   margin: 0 auto;
   text-align: center;
-
+  margin-top:8vh;
 }
 
 #main-slider {
@@ -117,6 +117,7 @@ body {
   font-size: 2.2vmin;
 }
 
+
 #tnyu-teams ul li{
   padding: 0;
   display: inline-block;
@@ -126,10 +127,15 @@ body {
   margin-top: 2vh;
 }
 
+#tnyu-teams ul li a {
+  color: $light-grey;
+  text-decoration: none;
+}
+
 .event-card {
   display: inline-block;
-  width: 16vw;
-  height: 15vw;
+  width: 260px;
+  height: 255px;
   margin-right: 1.5vw;
   margin-left: 1.5vw;
   margin-bottom:1vw;
@@ -166,7 +172,7 @@ body {
 }
 
 .event-card hr {
-  width: 13vw;
+  width: 220px;
   position: absolute;
   bottom: 4vh;
   margin-left: 1.3vw;
@@ -234,10 +240,11 @@ body {
 #tnyu-description {
 
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 8vh;
+  margin-bottom: 10vh;
   font-weight: $light-font;
   color: $coral-red;
-  font-size: 3vmin;
+  font-size: 4vmin;
 }
 
 #footer {
@@ -249,7 +256,7 @@ body {
 }
 
 #footer hr {
-  margin-top: 4vh;
+  margin-top: 6vh;
   margin-bottom: 2vh;
   height: 1px;
   width: 56vw;

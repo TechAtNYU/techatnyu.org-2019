@@ -5,8 +5,6 @@ import React, {Component} from 'react';
 import Slider from 'react-slick';
 import Constants from './Constants';
 
-// TODO:: Custom arrows
-
 const eventURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
 
 class Event extends Component {
@@ -36,7 +34,6 @@ class SimpleSlider extends Component {
             events:[]
         };
     }
-
     componentDidMount() {
         fetch(eventURL, {
             method:'GET',
@@ -49,11 +46,8 @@ class SimpleSlider extends Component {
                 });
             });
     }
-
     render () {
-
         let listEvents = [];
-
         if(this.state.events.length > 0) {
             for (let i = this.state.events.length-1; i >= 0; i--) {
                 listEvents.push(<div key={i}><Event event={this.state.events[i]} /></div>);
