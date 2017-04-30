@@ -27,7 +27,7 @@
 
 .question-answer {
   width: 30vw;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
 
 .question {
@@ -120,7 +120,7 @@
 
 .team-name {
   text-align: right;
-  padding-right: 7vw;
+  padding-right: 6.5vw;
   color: $coral-red;
   font-size: 3.5vmin;
   padding-bottom: 4vw;
@@ -259,4 +259,35 @@
 #board-members {
   margin-top: 10vh;
   margin-left: 40.5vw;
+  margin-bottom: 10vh;
+}
+
+.cell-1 {
+  padding-right: 3vw;
+  padding-bottom: 2.5vh;
+}
+
+.cell-2 {
+  padding-bottom: 2.5vh;
+}
+
+.member-name {
+  font-size: 2vmin;
+  font-weight: $light-font;
+}
+
+.member-handle {
+  font-size: 2vmin;
+  color: $coral-red;
+  text-decoration: underline;
+  //margin-left: 2vw;
+  font-weight: $light-font;
+}
+
+#board-members a {
+  font-weight: $bold-font;
+  color: $coral-red;
+  text-decoration: underline;
+  font-size: 2vmin;
+
 }

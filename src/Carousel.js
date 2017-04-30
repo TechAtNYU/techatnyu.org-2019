@@ -37,7 +37,6 @@ class SimpleSlider extends Component {
     componentDidMount() {
         fetch(eventURL, {
             method:'GET',
-
         })
             .then((response) => response.json())
             .then((responseData) => {
