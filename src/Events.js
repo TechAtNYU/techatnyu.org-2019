@@ -41,7 +41,7 @@ class SimpleSlider extends Component {
             .then((response) => response.json())
             .then((responseData) => {
                 if (responseData.data.length === 0) {
-                    console.log("no upcomin events");
+                    console.log("no upcoming events");
                 }
                 else {
                     this.setState({
@@ -64,8 +64,6 @@ class SimpleSlider extends Component {
             dots: false,
             slidesToShow: 3,
             arrows:true,
-            //nextArrow: <NextArrow/>,
-            // prevArrow: <SamplePrevArrow/>
         };
         return (
             <div>

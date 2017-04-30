@@ -280,7 +280,7 @@
   font-size: 2vmin;
   color: $coral-red;
   text-decoration: underline;
-  //margin-left: 2vw;
+  margin-left: 3vw;
   font-weight: $light-font;
 }
 
@@ -289,5 +289,26 @@
   color: $coral-red;
   text-decoration: underline;
   font-size: 2vmin;
+}
 
+#sponsor-list{
+  margin-left: 40.5vw;
+  margin-bottom: 12vh;
+}
+
+.sponsor-description {
+  font-weight: $light-font;
+  width: 32vw;
+  font-size: 2vmin;
+  margin-bottom: 10vh;
+}
+
+#sponsor-slider {
+  width: 38vw;
+  margin-left: 2vw;
+}
+
+.sponsor-img {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
 }

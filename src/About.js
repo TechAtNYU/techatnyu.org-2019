@@ -3,9 +3,11 @@
  */
 
 import React, { Component } from 'react';
+import Slider from 'react-slick';
 import Constants from './Constants'
 import {Link} from 'react-router';
 import members from '../data/eboard.json';
+import sponsors from '../data/sponsors.json';
 
 const fontStyle = {
     fontSize: "2vmin"
@@ -43,7 +45,7 @@ const Content = () => (
         </div>
         <hr id="events-line" style={lineStyle}/>
     </div>
-)
+);
 
 const Teams = () => (
     <table id="tnyu-teams-about">
@@ -92,7 +94,8 @@ const Teams = () => (
             </tr>
         </tbody>
     </table>
-)
+);
+
 
 class Board extends Component {
 
@@ -102,7 +105,6 @@ class Board extends Component {
             boardMembers: members['members']
         }
     }
-
     render() {
 
         let memberPairs = [];
@@ -147,11 +149,54 @@ class Board extends Component {
                         })}
                     </tbody>
                 </table>
-
+                <br/>
                 <a target="__blank" href="http://ship.techatnyu.org"> see our alum and an archive of their projects </a>
             </div>
         )
     }
+}
+
+class Sponsors extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            sponsors: sponsors['sponsors']
+        };
+    }
+    render () {
+
+        let sponsorLists = [];
+        if(this.state.sponsors.length > 0) {
+            for (let i = 0; i < this.state.sponsors.length; i++) {
+                let img = '/img/sponsors/' + this.state.sponsors[i].img;
+                sponsorLists.push(<div key={i}><img src={img}/></div>);
+            }
+        }
+        let settings = {
+            dots: false,
+            slidesToShow: 4,
+            arrows:true,
+        };
+
+        return (
+            <div id="sponsor-list">
+                <div className="events">sponsors</div>
+                <p className="sponsor-description">
+                    Our awesome sponsors help keep Tech@NYU up and running.
+                    We are so grateful for their support. If you would like to help sponsor
+                    Tech@NYU, please contact hello@techatnyu.org!
+                </p>
+
+                <div id="sponsor-slider">
+                    <Slider {...settings}>
+                        {sponsorLists}
+                    </Slider>
+                </div>
+            </div>
+        );
+    }
+
 }
 
 class About extends Component {
@@ -169,10 +214,12 @@ class About extends Component {
                 <img id = "squiggly" src="/img/squiggly.png"/>
                 <img id = "comment-img" src="/img/comment-bubble.png"/>
                 <img id = "team-photo" src="img/team-photo2.jpg"/>
+
                 <Content/>
                 <Teams/>
                 <Board/>
-                
+                <Sponsors/>
+
                 <div id="anti-harassment" >
                     <h1 className="events">  anti-harassment policy </h1>
                     <p style={fontStyle}>All Tech@NYU events and appearances are covered by a strict

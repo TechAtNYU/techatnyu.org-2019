@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import SimpleSlider from './Carousel'
+import SimpleSlider from './Events'
 import Constants from './Constants'
 
 
