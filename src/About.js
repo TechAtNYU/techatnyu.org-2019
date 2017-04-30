@@ -5,8 +5,7 @@
 import React, { Component } from 'react';
 import Constants from './Constants'
 import {Link} from 'react-router';
-import members from '../eboard.json';
-
+import members from '../eboard/eboard.json';
 
 const fontStyle = {
     fontSize: "2vmin"
@@ -98,11 +97,23 @@ const Teams = () => (
 
 class Board extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            boardMembers: members['members']
+        }
+    }
+
     render() {
-        console.log(members);
+
+        this.state.boardMembers.forEach(function(ele) {
+            console.log(ele);
+        });
+
         return (
             <div id="board-members">
                 <div className="events">board members</div>
+                <a href="/eboard/eboard.json">Eboard members</a>
             </div>
         )
     }
@@ -113,23 +124,7 @@ class About extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            boardMembers:[]
-        }
     }
-
-    // componentDidMount() {
-    //     fetch(memberURL, {
-    //         method: 'GET'
-    //     })
-    //         .then((response) => response.json())
-    //         .then((responseData)=> {
-    //             this.setState({
-    //                 boardMembers: responseData.data
-    //             });
-    //             console.log(this.state.boardMembers);
-    //         });
-    // }
 
     render() {
         return (
