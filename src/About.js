@@ -5,6 +5,8 @@
 import React, { Component } from 'react';
 import Constants from './Constants'
 import {Link} from 'react-router';
+import members from '../eboard.json';
+
 
 const fontStyle = {
     fontSize: "2vmin"
@@ -26,8 +28,6 @@ const lineStyle = {
 const colorStyle = {
     color: "#f05158"
 };
-
-const memberURL = 'https://api.tnyu.org/v3/memberships';
 
 const Content = () => (
     <div className="page-content">
@@ -99,9 +99,10 @@ const Teams = () => (
 class Board extends Component {
 
     render() {
+        console.log(members);
         return (
             <div id="board-members">
-                <div className="events">board members </div>
+                <div className="events">board members</div>
             </div>
         )
     }
@@ -117,18 +118,18 @@ class About extends Component {
         }
     }
 
-    componentDidMount() {
-        fetch(memberURL, {
-            method: 'GET'
-        })
-            .then((response) => response.json())
-            .then((responseData)=> {
-                this.setState({
-                    boardMembers: responseData.data
-                });
-                console.log(this.state.boardMembers);
-            });
-    }
+    // componentDidMount() {
+    //     fetch(memberURL, {
+    //         method: 'GET'
+    //     })
+    //         .then((response) => response.json())
+    //         .then((responseData)=> {
+    //             this.setState({
+    //                 boardMembers: responseData.data
+    //             });
+    //             console.log(this.state.boardMembers);
+    //         });
+    // }
 
     render() {
         return (
