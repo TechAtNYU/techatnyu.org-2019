@@ -20,7 +20,7 @@
 }
 
 .page-content {
-  margin-left: 81.5vh;
+  margin-left: 40.5vw;
   margin-top: 25vh;
   text-align: left;
 }
@@ -115,7 +115,7 @@
 
 #tnyu-teams-about {
   font-weight: $light-font;
-  margin-left: 20vw;
+  margin: 0 auto;
 }
 
 .team-name {
@@ -147,16 +147,16 @@
 }
 
 #anti-harassment {
-  margin-left: 81.5vh;
+  margin-left: 40.5vw;
   width: 30vw;
   font-weight: $light-font;
   margin-bottom: 10vh;
 }
 
 .page-intro {
-  width: 30vw;
+  width: 34vw;
   font-weight: $light-font;
-  margin-bottom: 50vh;
+  margin-bottom: 15vh;
   font-size: 2vmin;
 }
 
@@ -198,4 +198,65 @@
 
 .articles {
   font-size: 2vmin;
+}
+
+#jobs-container {
+  margin-bottom: 16vh;
+}
+
+.jobs-card {
+  position: relative;
+  z-index: 0;
+  background-color: white;
+  width: 52vw;
+  height: 18vh;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  box-shadow: 0px 3px 3px #ababab;
+  font-weight: $light-font;
+}
+
+.job-apply {
+  position: absolute;
+  z-index: 1;
+  height: 18vh;
+  background-color: $coral-red;
+  right: 0;
+  top: 0;
+  width: 10vw;
+  text-align: center;
+  color: white;
+  font-size: 2vmin;
+  font-weight: $light-font;
+}
+
+.job-apply p {
+  margin-top: 7.5vh;
+}
+
+.job-title {
+  color: $coral-red;
+  text-decoration: underline;
+}
+
+.job-content {
+  font-size: 1.8vmin;
+  padding-top: 3vh;
+  padding-left: 1.5vw;
+  width: 20vw;
+}
+
+#team-photo {
+  position: absolute;
+  top: 230vh;
+  left: 15vw;
+  width: 20vw;
+  height: 15vw;
+  box-shadow: 2px 2px 5px $light-grey;
+  transform: rotate(-5deg);
+}
+
+#board-members {
+  margin-top: 10vh;
+  margin-left: 40.5vw;
 }

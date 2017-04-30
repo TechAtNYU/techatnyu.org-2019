@@ -41,9 +41,14 @@ class SimpleSlider extends Component {
         })
             .then((response) => response.json())
             .then((responseData) => {
-                this.setState({
-                    events: responseData.data
-                });
+                if (responseData.data.length === 0) {
+                    console.log("no upcomin events");
+                }
+                else {
+                    this.setState({
+                        events: responseData.data
+                    });
+                }
             });
     }
     render () {

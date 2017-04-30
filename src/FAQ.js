@@ -55,7 +55,7 @@ class FAQ extends Component {
                         If you have additional questions, please don't hesitate to email us at <br/><a href="mailto:hello@techatnyu.org">hello@techatnyu.org!</a>
                     </div>
                 </div>
-                <footer id = "footer">
+                <footer id="footer">
                     <Constants.footer/>
                 </footer>
             </div>

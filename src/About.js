@@ -27,7 +27,7 @@ const colorStyle = {
     color: "#f05158"
 };
 
-const memberURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
+const memberURL = 'https://api.tnyu.org/v3/memberships';
 
 const Content = () => (
     <div className="page-content">
@@ -96,6 +96,18 @@ const Teams = () => (
 )
 
 
+class Board extends Component {
+
+    render() {
+        return (
+            <div id="board-members">
+                <div className="events">board members </div>
+            </div>
+        )
+    }
+}
+
+
 class About extends Component {
 
     constructor(props) {
@@ -103,6 +115,19 @@ class About extends Component {
         this.state = {
             boardMembers:[]
         }
+    }
+
+    componentDidMount() {
+        fetch(memberURL, {
+            method: 'GET'
+        })
+            .then((response) => response.json())
+            .then((responseData)=> {
+                this.setState({
+                    boardMembers: responseData.data
+                });
+                console.log(this.state.boardMembers);
+            });
     }
 
     render() {
@@ -113,8 +138,11 @@ class About extends Component {
                 <img id="clock" src="/img/clock.png"/>
                 <img id = "squiggly" src="/img/squiggly.png"/>
                 <img id = "comment-img" src="/img/comment-bubble.png"/>
+                <img id = "team-photo" src="img/team-photo2.jpg"/>
                 <Content/>
                 <Teams/>
+                <Board/>
+                
                 <div id="anti-harassment" >
                     <h1 className="events">  anti-harassment policy </h1>
                     <p style={fontStyle}>All Tech@NYU events and appearances are covered by a strict
