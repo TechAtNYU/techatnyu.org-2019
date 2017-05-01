@@ -69,7 +69,7 @@ class Event extends Component {
     }
 }
 
-class SimpleSlider extends Component {
+export class SimpleSlider extends Component {
 
     constructor(props) {
         super(props);
@@ -131,5 +131,60 @@ class SimpleSlider extends Component {
     }
 }
 
-export default SimpleSlider;
+// TODO:: how to not repeat code?
+export class MobileEvents extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            events:[]
+        };
+    }
+    componentDidMount() {
+        fetch(eventURL, {
+            method:'GET',
+        })
+            .then((response) => response.json())
+            .then((responseData) => {
+                if (responseData.data.length === 0) {
+                    console.log("no upcoming events");
+                }
+                else {
+                    this.setState({
+                        events: responseData.data
+                    });
+                }
+            });
+    }
+
+    render() {
+
+        let listEvents = [];
+        let numEvents = 0;
+
+        if(this.state.events.length > 0) {
+            for (let i = this.state.events.length-1; i >= 0; i--) {
+                listEvents.push(<div className="event-mobile" key={numEvents}><Event event={this.state.events[i]} /></div>);
+                numEvents += 1;
+            }
+        } else {
+            for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
+                listEvents.push(<div  className="event-mobile" key={numEvents}><Event event={placeholder[i]} /></div>);
+                numEvents += 1;
+            }
+        }
+
+        // TODO: DELETE THIS
+        for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
+            listEvents.push(<div  className="event-mobile" key={numEvents}><Event event={placeholder[i]} /></div>);
+            numEvents += 1;
+        }
+
+        return (
+            <div>
+                {listEvents}
+            </div>
+        )
+    }
+}
 

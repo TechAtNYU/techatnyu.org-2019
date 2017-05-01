@@ -58,6 +58,7 @@ body {
 #signup-form {
   margin: 0 auto;
   text-align: center;
+  font-size: 3vmin;
 }
 
 #signup-form p {
@@ -68,8 +69,8 @@ body {
 }
 
 #signup-form input {
-  width: 29vw;
-  height: 5.2vh;
+  width: 29em;
+  height: 2.5em;
   font-size: 2vmin;
   text-indent: 2vmin;
   font-weight: $light-font;
@@ -84,8 +85,8 @@ body {
   text-shadow: none !important;
   border: none !important;
   box-shadow: none !important;
-  width: 3.0vw;
-  height: 5.7vh;
+  width: 2.3em;
+  height: 2.3em;
   font-size: 2.5vmin;
   vertical-align: top;
   margin-top: 0.2vh;
@@ -100,25 +101,22 @@ body {
   font-size: 3vmin;
 }
 
-#slider-wrapper {
-  margin: 0 auto;
-  text-align: center;
-  margin-top:8vh;
-}
-
 #main-slider {
   width: 62vw;
   margin: 0 auto;
   text-align:center;
   position: relative;
+  margin-top:9vh;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1150px) {
-  #main-slider { display: none; }
+#mobile-events {
+  margin: 0 auto;
+  margin-top: 9vh;
+  text-align: center;
 }
 
-@media screen and (min-width: 1151px){
-  #main-slider { display: block; }
+.event-mobile{
+  margin-bottom: 3vh;
 }
 
 #tnyu-teams {
@@ -146,6 +144,7 @@ body {
 
 .event-card {
   display: inline-block;
+  text-align: left;
   width: $card-width;
   height: $card-height;
   margin-right: 1.5vw;
@@ -196,26 +195,22 @@ body {
 
 .event-title {
   color: $coral-red;
-  text-align: left;
   font-size: 2.1vmin;
   margin-top: 3vh;
-  padding-left: 2vh;
-  padding-right: 1.5vh;
+  margin-left: 1.2em;
 }
 
 .event-team {
   font-size: 1.7vmin;
   font-weight: $light-font;
   color: $light-red;
-  text-align: left;
-  margin-left: 1vw;
+  margin-left: 1.4em;
 }
 
 .event-description {
-  text-align: left;
   font-weight: $light-font;
-  margin-left: 1vw;
-  margin-right: 1.3vw;
+  margin-left: 1.4em;
+  margin-right: 1.3em;
   font-size: 1.8vmin;
 }
 
@@ -327,6 +322,18 @@ hr {
   font-weight: 500;
 }
 
+// Media queries
 
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  #main-slider { display: none; }
+  #mobile-events {display: block; }
 
+}
 
+@media screen and (min-width: 1151px){
+  #main-slider { display: block; }
+  #mobile-events {display: none; }
+
+}
+
+//#signup-form button

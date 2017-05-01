@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import SimpleSlider from './Events'
+import {SimpleSlider, MobileEvents} from './Events'
 import Constants from './Constants'
 
 
@@ -43,9 +43,8 @@ class Home extends Component {
 	            	<h1>tech@nyu</h1>
 			    </div>
                 <EmailForm/>
-			    <div id="slider-wrapper">
-                    <div id="main-slider"><SimpleSlider team={this.state}/></div>
-			    </div>
+                <div id="main-slider"><SimpleSlider team={this.state}/></div>
+                <div id="mobile-events"><MobileEvents/></div>
 
 			    <h2 id="tnyu-description"> We are NYC's largest student-run organization <br/> of coders, designers, and builders. </h2>
 			    <footer id= "footer">
