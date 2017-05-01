@@ -85,7 +85,7 @@ body {
   border: none !important;
   box-shadow: none !important;
   width: 3.0vw;
-  height: 5.4vh;
+  height: 5.7vh;
   font-size: 2.5vmin;
   vertical-align: top;
   margin-top: 0.2vh;
@@ -95,6 +95,11 @@ body {
   background-color: $dark-red;
 }
 
+.arrow-submit {
+  padding-top: 0.5vh;
+  font-size: 3vmin;
+}
+
 #slider-wrapper {
   margin: 0 auto;
   text-align: center;
@@ -102,11 +107,18 @@ body {
 }
 
 #main-slider {
-  width: 60vw;
+  width: 62vw;
   margin: 0 auto;
   text-align:center;
-  display: inline-block;
   position: relative;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  #main-slider { display: none; }
+}
+
+@media screen and (min-width: 1151px){
+  #main-slider { display: block; }
 }
 
 #tnyu-teams {
