@@ -41,10 +41,7 @@ class Home extends Component {
             selectTeam: "All"
         };
     }
-    handleClick(team) {
-        this.state.selectTeam = team;
-        this.forceUpdate();
-    }
+
     render () {
     	return (
 	        <div>
@@ -53,16 +50,16 @@ class Home extends Component {
 			    </div>
                 <EmailForm/>
 			    <div id="slider-wrapper">
-			        <nav id="tnyu-teams">
-			            <ul>
-			                <li><a href="#" onClick={()=>this.handleClick("All")}>All</a></li>
-			                <li><a href="#" onClick={()=>this.handleClick("After Hours")}>After Hours</a></li>
-			                <li><a href="#" onClick={()=>this.handleClick("Demo Days")}>Demo Days</a></li>
-			                <li><a href="#" onClick={()=>this.handleClick("Design Days")}>Design Days</a></li>
-			                <li><a href="#" onClick={()=>this.handleClick("Game Days")}>Game Days</a></li>
-			                <li><a href="#" onClick={()=>this.handleClick("Hack Days")}>Hack Days</a></li>
-			            </ul>
-			        </nav>
+			        {/*<nav id="tnyu-teams">*/}
+			            {/*<ul>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("All")}>All</a></li>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("After Hours")}>After Hours</a></li>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("Demo Days")}>Demo Days</a></li>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("Design Days")}>Design Days</a></li>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("Game Days")}>Game Days</a></li>*/}
+			                {/*<li><a href="#" onClick={()=>this.handleClick("Hack Days")}>Hack Days</a></li>*/}
+			            {/*</ul>*/}
+			        {/*</nav>*/}
 			        <div id="main-slider"><SimpleSlider team={this.state}/></div>
 			    </div>
 			    <h2 id="tnyu-description"> We are NYC's largest student-run organization <br/> of coders, designers, and builders. </h2>

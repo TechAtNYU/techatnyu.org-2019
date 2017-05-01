@@ -6,6 +6,49 @@ import Slider from 'react-slick';
 import Constants from './Constants';
 
 const eventURL = 'https://api.tnyu.org/v3/events/upcoming-publicly-live?page%5Blimit%5D=15&sort=startDateTime?';
+const placeholder = [
+    {
+        relationships: {
+            teams: {
+                data:[{
+                    id:'56410d72e24ad83b0635516f'
+                }]
+            }
+        },
+        attributes: {
+            title: 'VR Showcase',
+            description: 'Come join us for an afternoon of awesome VR experiences and games!',
+            startDateTime: '2017-04-21T16:30:00.000Z'
+        }
+    }, {
+        relationships: {
+            teams: {
+                data:[{
+                    id:'53f54dd98d1e62ff12539dc1'
+                }]
+            }
+        },
+        attributes: {
+            title: 'Web Scraping with Selenium',
+            description: 'Learn about webscraping and automating tasks with Selenium.',
+            startDateTime: '2017-04-20T22:15:00.000Z'
+        }
+    },
+    {
+        relationships: {
+            teams: {
+                data:[{
+                    id:'53f99d6bc66b44cf6f8f6d82'
+                }]
+            }
+        },
+        attributes: {
+            title: 'Design Thinking with IDEO',
+            description: 'Learn about design thinking from two designers at IDEO',
+            startDateTime: '2017-04-19T21:00:00.000Z'
+        }
+    },
+];
 
 class Event extends Component {
     constructor(props) {
@@ -51,13 +94,26 @@ class SimpleSlider extends Component {
             });
     }
     render () {
+
         let listEvents = [];
+        let numEvents = 0;
+
         if(this.state.events.length > 0) {
             for (let i = this.state.events.length-1; i >= 0; i--) {
-                listEvents.push(<div key={i}><Event event={this.state.events[i]} /></div>);
+                listEvents.push(<div key={numEvents}><Event event={this.state.events[i]} /></div>);
+                numEvents += 1;
             }
         } else {
-            listEvents.push(<div key="0"></div>);
+            for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
+                listEvents.push(<div key={numEvents}><Event event={placeholder[i]} /></div>);
+                numEvents += 1;
+            }
+        }
+
+        // TODO: DELETE THIS
+        for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
+            listEvents.push(<div key={numEvents}><Event event={placeholder[i]} /></div>);
+            numEvents += 1;
         }
 
         let settings = {

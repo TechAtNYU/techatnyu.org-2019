@@ -130,11 +130,11 @@ class Board extends Component {
                                 return <tr key={index}>
                                     <td className="cell-1">
                                         <span className="member-name"> {obj[0].name}, {obj[0].role} </span> <br/>
-                                        <span className="member-handle"> @{obj[0].name} </span>
+                                        <span > <a className = "member-handle" href={obj[0].link} target="__blank">@{obj[0].name}</a> </span>
                                     </td>
                                     <td className="cell-2">
                                         <span className="member-name"> {obj[1].name}, {obj[1].role} </span> <br/>
-                                        <span className="member-handle"> @{obj[1].name} </span>
+                                        <span > <a className="member-handle" href={obj[1].link} target="__blank">@{obj[1].name}</a> </span>
                                     </td>
                                 </tr>
                             }
@@ -142,7 +142,7 @@ class Board extends Component {
                                 return <tr key={index}>
                                     <td className="cell-1">
                                         <span className="member-name"> {obj[0].name}, {obj[0].role} </span> <br/>
-                                        <span className="member-handle"> @{obj[0].name} </span>
+                                        <span> <a className = "member-handle" href={obj[0].link} target="__blank">@{obj[0].name}</a>   </span>
                                     </td>
                                 </tr>
                             }
@@ -150,7 +150,7 @@ class Board extends Component {
                     </tbody>
                 </table>
                 <br/>
-                <a target="__blank" href="http://ship.techatnyu.org"> see our alum and an archive of their projects </a>
+                <a target="__blank" href="http://ship.techatnyu.org" id="alum-link"> see our alum and an archive of their projects </a>
             </div>
         )
     }

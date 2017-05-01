@@ -11,7 +11,7 @@ body {
   left: 0;
   z-index: 9999;
   width: 100vw;
-  height: 7.5vh;
+  height: 8vh;
   background-color: $coral-red;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -134,8 +134,8 @@ body {
 
 .event-card {
   display: inline-block;
-  width: 260px;
-  height: 255px;
+  width: $card-width;
+  height: $card-height;
   margin-right: 1.5vw;
   margin-left: 1.5vw;
   margin-bottom:1vw;
@@ -172,7 +172,7 @@ body {
 }
 
 .event-card hr {
-  width: 220px;
+  width: $card-width - 30px;
   position: absolute;
   bottom: 4vh;
   margin-left: 1.3vw;
@@ -185,14 +185,14 @@ body {
 .event-title {
   color: $coral-red;
   text-align: left;
-  font-size: 1.8vh;
-  margin-top: 2vh;
+  font-size: 2.1vmin;
+  margin-top: 3vh;
   padding-left: 2vh;
   padding-right: 1.5vh;
 }
 
 .event-team {
-  font-size: 1.6vh;
+  font-size: 1.7vmin;
   font-weight: $light-font;
   color: $light-red;
   text-align: left;
@@ -204,7 +204,7 @@ body {
   font-weight: $light-font;
   margin-left: 1vw;
   margin-right: 1.3vw;
-  font-size: 1.75vmin;
+  font-size: 1.8vmin;
 }
 
 .event-date {
@@ -218,7 +218,7 @@ body {
 
 .event-rsvp {
   position: absolute;
-  bottom: 0;
+  bottom: -0.9vh;
   right: 1.7vw;
 }
 
@@ -227,6 +227,7 @@ body {
   text-decoration: none;
   font-weight: $light-font;
   font-size: 1.8vmin;
+  padding-top: 5vmin;
 }
 
 .arrow {
