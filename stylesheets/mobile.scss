@@ -1,0 +1,101 @@
+// Mobile event cards
+
+.event-mobile {
+    margin-bottom: 3vh;
+}
+
+.event-card-mobile {
+    font-size: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 210px;
+    height: 220px;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+    margin-bottom:1vw;
+    background-color: white;
+    vertical-align: top;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.event-card-mobile hr {
+    width: 185px;
+    position: absolute;
+    bottom: 4vh;
+    margin-left: 1em;
+    border: none;
+    height: 1px;
+    color: $border-grey;
+    background-color: $border-grey;
+}
+
+.event-card-mobile:hover {
+    background-color: $coral-red;
+    color:white;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
+.event-card-mobile:hover .event-title-mobile {
+    color:white;
+}
+
+.event-card-mobile:hover .event-team-mobile {
+    color:white;
+}
+
+.event-card-mobile:hover .event-date-mobile {
+    color:white;
+}
+
+.event-card-mobile:hover .line-break {
+    border-color:white;
+}
+
+.event-card-mobile:hover .event-rsvp-mobile a{
+    color:white;
+}
+
+.event-title-mobile {
+    color: $coral-red;
+    font-size: 1.1em;
+    margin-top: 3vh;
+    margin-left: 1em;
+}
+
+.event-team-mobile {
+    font-size: 0.9em;
+    font-weight: $light-font;
+    color: $light-red;
+    margin-left: 1.4em;
+}
+
+.event-description-mobile {
+    font-weight: $light-font;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    font-size: 1em;
+}
+
+.event-date-mobile {
+    position: absolute;
+    left: 1em;
+    bottom: 0;
+    font-weight: $light-font;
+    color: $light-grey;
+    font-size: 1em;
+}
+
+.event-rsvp-mobile {
+    position: absolute;
+    bottom: 0vh;
+    right: 1.5em;
+}
+
+.event-rsvp-mobile a{
+    color: $coral-red;
+    text-decoration: none;
+    font-weight: $light-font;
+    font-size: 1em;
+    padding-top: 1em;
+}

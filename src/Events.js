@@ -69,6 +69,25 @@ class Event extends Component {
     }
 }
 
+class EventMobile extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        const date = new Date(this.props.event.attributes.startDateTime);
+        return (
+            <div className="event-card-mobile">
+                <p className="event-title-mobile"> {this.props.event.attributes.title} </p>
+                <p className="event-team-mobile"> {Constants.teams[this.props.event.relationships.teams.data[0].id]}</p>
+                <p className="event-description-mobile">{this.props.event.attributes.description}</p>
+                <hr className="line-break"></hr>
+                <p className="event-date-mobile"> {date.getMonth() + 1}.{date.getDate()} </p>
+                <p className="event-rsvp-mobile"><a href={Constants.links.rsvp} target="_blank">RSVP</a></p>
+            </div>
+        )
+    }
+}
+
 export class SimpleSlider extends Component {
 
     constructor(props) {
@@ -164,19 +183,19 @@ export class MobileEvents extends Component {
 
         if(this.state.events.length > 0) {
             for (let i = this.state.events.length-1; i >= 0; i--) {
-                listEvents.push(<div className="event-mobile" key={numEvents}><Event event={this.state.events[i]} /></div>);
+                listEvents.push(<div className="event-mobile" key={numEvents}><EventMobile event={this.state.events[i]} /></div>);
                 numEvents += 1;
             }
         } else {
             for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
-                listEvents.push(<div  className="event-mobile" key={numEvents}><Event event={placeholder[i]} /></div>);
+                listEvents.push(<div  className="event-mobile" key={numEvents}><EventMobile event={placeholder[i]} /></div>);
                 numEvents += 1;
             }
         }
 
         // TODO: DELETE THIS
         for (let i = 0; i < placeholder.length; i++) { // add in placeholder events if there are no upcoming events
-            listEvents.push(<div  className="event-mobile" key={numEvents}><Event event={placeholder[i]} /></div>);
+            listEvents.push(<div  className="event-mobile" key={numEvents}><EventMobile event={placeholder[i]} /></div>);
             numEvents += 1;
         }
 
