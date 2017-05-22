@@ -13,11 +13,11 @@ const Nav = () => (
          <nav className="navbar-header">
                 <div className="navbar-content">
                     <ul>
-                        <li><IndexLink  activeClassName="active" to="/">home</IndexLink></li>
-                        <li><IndexLink  activeClassName="active" to="/about">about</IndexLink></li>
-                        <li><IndexLink  activeClassName="active" to="/faq">faq</IndexLink></li>
-                        <li><IndexLink  activeClassName="active" to="/jobs">jobs</IndexLink></li>
-                        <li><IndexLink  activeClassName="active" to="/library">library</IndexLink></li>
+                        <li><IndexLink  title="home" activeClassName="active" to="/">home</IndexLink></li>
+                        <li><IndexLink  title="about" activeClassName="active" to="/about">about</IndexLink></li>
+                        <li><IndexLink  title="faq" activeClassName="active" to="/faq">faq</IndexLink></li>
+                        <li><IndexLink  title="jobs" activeClassName="active" to="/jobs">jobs</IndexLink></li>
+                        <li><IndexLink  title="library" activeClassName="active" to="/library">library</IndexLink></li>
                     </ul>
                 </div>
         </nav>
