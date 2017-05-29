@@ -26,7 +26,7 @@
 }
 
 .question-answer {
-  width: 30vw;
+  width: 35vw;
   margin-bottom: 5vh;
 }
 
@@ -64,7 +64,7 @@
 
 .tech-description {
   font-weight: $light-font;
-  width: 32vw;
+  width: 35vw;
   font-size: 1.8vmin;
   margin-bottom: 10vh;
 }
@@ -123,7 +123,8 @@
 
 .team-name {
   text-align: right;
-  padding-right: 6.5vw;
+  padding-right: 0vw;
+  padding-left: 6vw;
   color: $coral-red;
   font-size: 3.2vmin;
   padding-bottom: 4vw;
@@ -131,17 +132,18 @@
 }
 
 .team-description {
-  width: 30vw;
+  width: 35vw;
   text-align: left;
   color: black;
   font-size: 1.8vmin;
   padding-right: 8vw;
+  padding-left: 5vw;
   padding-bottom: 4vw;
   vert-align: top;
 }
 
 #policy {
-  width: 30vw;
+  width: 35vw;
   font-size: 1.8vmin;
   font-weight: $light-font;
   padding-top: 7vh;
@@ -151,13 +153,13 @@
 
 #anti-harassment {
   margin-left: 40.5vw;
-  width: 30vw;
+  width: 35vw;
   font-weight: $light-font;
   margin-bottom: 10vh;
 }
 
 .page-intro {
-  width: 34vw;
+  width: 35vw;
   font-weight: $light-font;
   margin-bottom: 15vh;
   font-size: 1.8vmin;
@@ -302,8 +304,8 @@
 
 .sponsor-description {
   font-weight: $light-font;
-  width: 32vw;
-  font-size: 2vmin;
+  width: 35vw;
+  font-size: 1.8vmin;
   margin-bottom: 10vh;
 }
 

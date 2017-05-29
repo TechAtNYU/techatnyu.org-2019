@@ -10,7 +10,7 @@ import members from '../data/eboard.json';
 import sponsors from '../data/sponsors.json';
 
 const fontStyle = {
-    fontSize: "2vmin"
+    fontSize: "1.8vmin"
 };
 
 const marginStyle = {
