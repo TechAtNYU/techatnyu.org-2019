@@ -25,8 +25,8 @@ class FAQ extends Component {
                     </div>
                     <div className="question-answer">
                         <div className="question"> How do I find out about these events? </div>
-                        <div className="answer"> Join our mailing list and follow us on our social media channels:
-                            <a href={Constants.links.twitter} target="_blank">Twitter</a>, <a href={Constants.links.instagram} target="_blank">Instagram</a>, <a href={Constants.links.facebook} target="_blank">Facebook</a>
+                        <div className="answer"> Join our mailing list and follow us on our social media channels:<br/>
+                             <a href={Constants.links.twitter} target="_blank">Twitter</a>, <a href={Constants.links.instagram} target="_blank">Instagram</a>, <a href={Constants.links.facebook} target="_blank">Facebook</a>
                         </div>
                     </div>
                     <div className="question-answer">
@@ -52,7 +52,7 @@ class FAQ extends Component {
                         <div className="answer"> We have various roles and teams within the e-board. Normally each team will have a team lead and one or two other team members. Aside from the event teams, the e-board also has infrastructure, marketing, and other operational roles. Check out our <a href="about.html">about</a> page to find out more about the different teams in Tech@NYU and see additional information on our e-board members.</div>
                     </div>
                     <div className="email-us">
-                        If you have additional questions, please don't hesitate to email us at <br/><a href="mailto:hello@techatnyu.org">hello@techatnyu.org!</a>
+                        If you have additional questions, please don't hesitate to email us at <a href="mailto:hello@techatnyu.org">hello@techatnyu.org!</a>
                     </div>
                 </div>
                 <footer id="footer">
