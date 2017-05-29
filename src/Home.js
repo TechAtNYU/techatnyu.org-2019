@@ -7,7 +7,7 @@ class EmailForm extends Component {
   	constructor(props) {
 		super(props);
 		this.state = {
-            value: "Type your email"
+            value: "Enter your email"
 		};
 	}
   	handleChange (evt) {
@@ -23,7 +23,7 @@ class EmailForm extends Component {
 			<div id="signup-form">
 			        <p> Be the first to know about upcoming events and opportunities. </p><br/>
 			        <form>
-			        	<input type="email" value={this.state.value} onChange={this.handleChange}/>
+			        	<input type="email" placeholder={this.state.value} onChange={this.handleChange}/>
 				        <button onClick={()=>this.submitChange(this.state.value)} type="submit" className="btn btn-success">
 		                	<i className="material-icons arrow-submit">arrow_forward</i>
 	            		</button>

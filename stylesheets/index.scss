@@ -82,7 +82,10 @@ body {
   text-indent: 2vmin;
   font-weight: $light-font;
   vertical-align: top;
-  color: $light-grey;
+}
+
+#signup-form input:focus {
+  outline: none;
 }
 
 #signup-form button {
