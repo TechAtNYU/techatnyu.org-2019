@@ -3,9 +3,9 @@
 .page-title {
   color: $coral-red;
   position: absolute;
-  font-size: 8vmin;
+  font-size: 7vmin;
   left: 22vw;
-  top: 10vh;
+  top: 17vh;
   z-index: 1000;
 }
 
@@ -34,12 +34,12 @@
   font-weight: $bold-font;
   color: $coral-red;
   margin-bottom: 2vh;
-  font-size: 2.8vmin;
+  font-size: 2.5vmin;
 }
 
 .answer {
   font-weight: $light-font;
-  font-size: 1.9vmin;
+  font-size: 1.8vmin;
   color: black;
 }
 
@@ -65,8 +65,8 @@
 .tech-description {
   font-weight: $light-font;
   width: 32vw;
-  font-size: 2vmin;
-  margin-bottom: 15vh;
+  font-size: 1.8vmin;
+  margin-bottom: 10vh;
 }
 
 .events {
@@ -74,9 +74,12 @@
   font-weight: $bold-font;
   color: $coral-red;
   margin-bottom: 5vh;
+  margin-top: 3vh;
 }
 
 #events-line {
+  margin-top: -5vh;
+  margin-bottom: -5vh;
   border-color: $coral-red;
   width: 8vw;
 }
@@ -122,7 +125,7 @@
   text-align: right;
   padding-right: 6.5vw;
   color: $coral-red;
-  font-size: 3.5vmin;
+  font-size: 3.2vmin;
   padding-bottom: 4vw;
   vertical-align: top;
 }
@@ -131,7 +134,7 @@
   width: 30vw;
   text-align: left;
   color: black;
-  font-size: 2vmin;
+  font-size: 1.8vmin;
   padding-right: 8vw;
   padding-bottom: 4vw;
   vert-align: top;
@@ -139,7 +142,7 @@
 
 #policy {
   width: 30vw;
-  font-size: 2vmin;
+  font-size: 1.8vmin;
   font-weight: $light-font;
   padding-top: 7vh;
   padding-bottom: 7vh;
@@ -157,7 +160,7 @@
   width: 34vw;
   font-weight: $light-font;
   margin-bottom: 15vh;
-  font-size: 2vmin;
+  font-size: 1.8vmin;
 }
 
 #job-opps {
@@ -182,7 +185,7 @@
 }
 
 #libraries {
-  margin-left: 22vw;
+  margin-left: 40.5vw;
   color: $coral-red;
   font-weight: $light-font;
 }
@@ -197,7 +200,7 @@
 }
 
 .articles {
-  font-size: 2vmin;
+  font-size: 1.8vmin;
 }
 
 #jobs-container {
@@ -257,7 +260,7 @@
 }
 
 #board-members {
-  margin-top: 10vh;
+  margin-top: 3vh;
   margin-left: 40.5vw;
   margin-bottom: 10vh;
 }
@@ -272,12 +275,12 @@
 }
 
 .member-name {
-  font-size: 2.1vmin;
+  font-size: 1.8vmin;
   font-weight: $light-font;
 }
 
 .member-handle {
-  font-size: 2.1vmin;
+  font-size: 1.8vmin;
   color: $coral-red;
   text-decoration: underline;
   margin-left: 3vw;
@@ -289,6 +292,7 @@
   color: $coral-red;
   text-decoration: underline;
   font-size: 2vmin;
+  cursor: pointer;
 }
 
 #sponsor-list{
@@ -304,8 +308,8 @@
 }
 
 #sponsor-slider {
-  width: 38vw;
-  margin-left: 2vw;
+  width: 30vw;
+  margin-left: 1vw;
 }
 
 .sponsor-img {
