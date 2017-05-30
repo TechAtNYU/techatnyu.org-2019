@@ -46,7 +46,7 @@ class Home extends Component {
                 <div id="main-slider"><SimpleSlider team={this.state}/></div>
                 <div id="mobile-events"><MobileEvents/></div>
 
-			    <h2 id="tnyu-description"> We are NYC's largest student-run organization <br/> of coders, designers, and builders. </h2>
+			    <h2 id="tnyu-description"> We are NYC's largest student-run community <br/> of coders, designers, and builders. </h2>
 			    <footer id= "footer">
 			    	<Constants.footer/>
 			    </footer>
