@@ -14,7 +14,8 @@ var config = {
     loaders: [
         { test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
         { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')},
-        { test: /\.(png|jpg)$/, loader:'url-loader'}
+        { test: /\.(png|jpg)$/, loader:'url-loader'},
+        { test: /\.json$/, loader: 'json' }
     ],
   },
   plugins: [

@@ -11,9 +11,9 @@ body {
   left: 0;
   z-index: 9999;
   width: 100vw;
-  height: 7.5vh;
-  background-color: #f05158;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 7vh;
+  background-color: $coral-red;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .navbar-content {
@@ -31,23 +31,29 @@ body {
   margin-right: 2vw;
   margin-left: 2vw;
   margin-top: 0.4vh;
-  font-size: 2.5vmin;
+  font-size: 2vmin;
 }
 
 .navbar-content a {
+  display: inline-block;
   text-decoration: none;
   color: white;
 }
 
 .navbar-content a:hover {
-  font-weight: $medium-font;
+  cursor: pointer;
+  color: #4A1723;
+}
+
+.navbar-content a:after {
+  color: #4A1723;
 }
 
 #tnyu-title {
   font-weight: $bold-font;
-  margin-top: 12vh;
+  margin-top: 20vh;
   text-align: center;
-  color: #f05158;
+  color: $coral-red;
   font-size: 5.5vmin;
 }
 
@@ -58,23 +64,28 @@ body {
 #signup-form {
   margin: 0 auto;
   text-align: center;
+  font-size: 3vmin;
 }
 
 #signup-form p {
-  color: #f05158;
+  color: $coral-red;
   font-weight: $light-font;
   margin-bottom: 0vh;
-  font-size: 2.2vmin;
+  font-size: 1.9vmin;
 }
 
 #signup-form input {
-  width: 29vw;
-  height: 5.2vh;
-  font-size: 2vmin;
+  margin-top: -1vh;
+  width: 26.5em;
+  height: 2.5em;
+  font-size: 1.8vmin;
   text-indent: 2vmin;
   font-weight: $light-font;
-  vertical-align: bottom;
+  vertical-align: top;
+}
 
+#signup-form input:focus {
+  outline: none;
 }
 
 #signup-form button {
@@ -84,28 +95,34 @@ body {
   text-shadow: none !important;
   border: none !important;
   box-shadow: none !important;
-  width: 3.2vw;
-  height: 5.3vh;
+  width: 2em;
+  height: 2em;
   font-size: 2.5vmin;
-
+  vertical-align: top;
+  margin-top: -0.8vh;
 }
 
 #signup-form button:hover {
   background-color: $dark-red;
 }
 
-#slider-wrapper {
-  margin: 0 auto;
-  text-align: center;
-
+.arrow-submit {
+  padding-top: 0.6vh;
+  font-size: 3vmin;
 }
 
 #main-slider {
-  width: 60vw;
+  width: 55vw;
   margin: 0 auto;
   text-align:center;
-  display: inline-block;
   position: relative;
+  margin-top:9vh;
+}
+
+#mobile-events {
+  margin: 0 auto;
+  margin-top: 9vh;
+  text-align: center;
 }
 
 #tnyu-teams {
@@ -116,6 +133,7 @@ body {
   font-size: 2.2vmin;
 }
 
+
 #tnyu-teams ul li{
   padding: 0;
   display: inline-block;
@@ -125,59 +143,108 @@ body {
   margin-top: 2vh;
 }
 
+#tnyu-teams ul li a {
+  color: $light-grey;
+  text-decoration: none;
+}
 .event-card {
+  font-size: 1.8vmin;
   display: inline-block;
-  width: 16vw;
-  height: 15vw;
-  margin-right: 1.5vw;
-  margin-left: 1.5vw;
+  text-align: left;
+  width: 16.5vw;
+  height: 30vh;
+  margin-right: 1vw;
+  margin-left: 1vw;
   margin-bottom:1vw;
   background-color: white;
   vertical-align: top;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.event-card:hover {
+  background-color: $coral-red;
+  color:white;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+
+.event-card:hover .event-title {
+  color:white;
+}
+
+.event-card:hover .event-team {
+  color:white;
+}
+
+.event-card:hover .event-date {
+  color:white;
+}
+
+.event-card:hover .line-break {
+  border-color:white;
+}
+
+.event-card:hover .event-rsvp a{
+  color:white;
 }
 
 .event-card hr {
-  border-color: $border-grey;
-  width: 13vw;
+  width: 13.75vw;
   position: absolute;
   bottom: 4vh;
   margin-left: 1.3vw;
+  border: none;
+  height: 1px;
+  color: $border-grey;
+  background-color: $border-grey;
 }
 
 .event-title {
   color: $coral-red;
-  text-align: left;
-  font-size: 1.8vh;
-  text-indent: 1.3vw;
-  margin-top: 2vh;
+  font-size: 1em;
+  margin-top: 3vh;
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+  text-transform: uppercase;
 }
 
 .event-team {
-  font-size: 1.6vh;
-  font-weight: $light-font;
-  color: $light-red;
-  text-align: left;
-  text-indent: 1.3vw;
+  font-size: 0.9em;
+  font-weight: $medium-font;
+  color: $salmon;
+  margin-left: 1.4em;
 }
 
 .event-description {
-  text-align: left;
   font-weight: $light-font;
-  margin-left: 1.3vw;
-  margin-right: 1vw;
-  font-size: 1.75vmin;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+  font-size: 1em;
 }
 
 .event-date {
   position: absolute;
-  margin-left: 1.3vw;
+  left: 1.3vw;
   bottom: 0;
   font-weight: $light-font;
   color: $light-grey;
   font-size: 1.8vmin;
 }
+
+.event-rsvp {
+  position: absolute;
+  bottom: 0vh;
+  right: 1.7vw;
+}
+
+.event-rsvp a{
+  color: $coral-red;
+  text-decoration: none;
+  font-weight: $light-font;
+  font-size: 1.8vmin;
+  padding-top: 5vmin;
+}
+
 
 .arrow {
   font-size: 10vh;
@@ -188,12 +255,12 @@ body {
 }
 
 #tnyu-description {
-
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
   font-weight: $light-font;
   color: $coral-red;
-  font-size: 3vmin;
+  font-size: 3.5vmin;
 }
 
 #footer {
@@ -205,16 +272,21 @@ body {
 }
 
 #footer hr {
-  margin-top: 4vh;
+  margin-top: 15vh;
   margin-bottom: 2vh;
-  border-color: $border-grey;
-  width: 56vw;
+  height: 1px;
+  width: 53vw;
+  border: none;
+  background-color: $border-grey;
 }
 
 #footer-content{
   text-align: center;
   position: relative;
   font-size: 1.8vmin;
+  margin-left: 4vh;
+  margin-right: 3vh;
+  margin-top: 4vh;
   margin-bottom: 10vh;
 }
 
@@ -245,17 +317,30 @@ hr {
   border: 0.4px solid rgb(128, 128, 128);
 }
 
-// TODO:: override the default arrows
-
 .slick-prev:before {
   color: $coral-red;
   font-size: 3vmin;
+  font-weight: 800;
 }
 
 .slick-next:before {
   color: $coral-red;
   font-size: 3vmin;
+  font-weight: 800;
 }
 
+.active {
+  color: #4A1723 !important;
+}
 
+// Media queries
 
+@media screen and (min-width: 0px) and (max-width: 1150px) {
+  #main-slider { display: none; }
+  #mobile-events {display: block; }
+}
+
+@media screen and (min-width: 1151px) {
+  #main-slider { display: block; }
+  #mobile-events {display: none; }
+}

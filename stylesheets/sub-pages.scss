@@ -3,33 +3,43 @@
 .page-title {
   color: $coral-red;
   position: absolute;
+  font-size: 7vmin;
+  left: 22vw;
+  top: 17vh;
+  z-index: 1000;
+}
+
+.not-found {
+  color: $coral-red;
+  position: absolute;
   font-size: 8vmin;
   left: 22vw;
   top: 10vh;
   z-index: 1000;
+  font-weight: $light-font;
 }
 
 .page-content {
-  margin-left: 81.5vh;
+  margin-left: 40.5vw;
   margin-top: 25vh;
   text-align: left;
 }
 
 .question-answer {
-  width: 30vw;
-  margin-bottom: 3vh;
+  width: 35vw;
+  margin-bottom: 5vh;
 }
 
 .question {
   font-weight: $bold-font;
   color: $coral-red;
   margin-bottom: 2vh;
-  font-size: 2.8vmin;
+  font-size: 2.5vmin;
 }
 
 .answer {
   font-weight: $light-font;
-  font-size: 1.9vmin;
+  font-size: 1.8vmin;
   color: black;
 }
 
@@ -39,7 +49,7 @@
 }
 
 .email-us {
-  width: 30vw;
+  width: 35vw;
   font-weight: $light-font;
   color: $light-red;
   font-size: 2.8vmin;
@@ -54,9 +64,9 @@
 
 .tech-description {
   font-weight: $light-font;
-  width: 32vw;
-  font-size: 2vmin;
-  margin-bottom: 15vh;
+  width: 35vw;
+  font-size: 1.8vmin;
+  margin-bottom: 10vh;
 }
 
 .events {
@@ -64,9 +74,12 @@
   font-weight: $bold-font;
   color: $coral-red;
   margin-bottom: 5vh;
+  margin-top: 3vh;
 }
 
 #events-line {
+  margin-top: -5vh;
+  margin-bottom: -5vh;
   border-color: $coral-red;
   width: 8vw;
 }
@@ -105,31 +118,33 @@
 
 #tnyu-teams-about {
   font-weight: $light-font;
-  margin-left: 20vw;
+  margin: 0 auto;
 }
 
 .team-name {
   text-align: right;
-  padding-right: 7vw;
+  padding-right: 0vw;
+  padding-left: 6vw;
   color: $coral-red;
-  font-size: 3.5vmin;
+  font-size: 3.2vmin;
   padding-bottom: 4vw;
   vertical-align: top;
 }
 
 .team-description {
-  width: 30vw;
+  width: 35vw;
   text-align: left;
   color: black;
-  font-size: 2vmin;
+  font-size: 1.8vmin;
   padding-right: 8vw;
+  padding-left: 5vw;
   padding-bottom: 4vw;
   vert-align: top;
 }
 
 #policy {
-  width: 30vw;
-  font-size: 2vmin;
+  width: 35vw;
+  font-size: 1.8vmin;
   font-weight: $light-font;
   padding-top: 7vh;
   padding-bottom: 7vh;
@@ -137,17 +152,17 @@
 }
 
 #anti-harassment {
-  margin-left: 81.5vh;
-  width: 30vw;
+  margin-left: 40.5vw;
+  width: 35vw;
   font-weight: $light-font;
   margin-bottom: 10vh;
 }
 
 .page-intro {
-  width: 30vw;
+  width: 35vw;
   font-weight: $light-font;
-  margin-bottom: 50vh;
-  font-size: 2vmin;
+  margin-bottom: 15vh;
+  font-size: 1.8vmin;
 }
 
 #job-opps {
@@ -172,7 +187,7 @@
 }
 
 #libraries {
-  margin-left: 22vw;
+  margin-left: 40.5vw;
   color: $coral-red;
   font-weight: $light-font;
 }
@@ -187,5 +202,119 @@
 }
 
 .articles {
+  font-size: 1.8vmin;
+}
+
+#jobs-container {
+  margin-bottom: 16vh;
+}
+
+.jobs-card {
+  position: relative;
+  z-index: 0;
+  background-color: white;
+  width: 52vw;
+  height: 18vh;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  box-shadow: 0px 1.5px 1.5px #ababab;
+  font-weight: $light-font;
+}
+
+.job-apply {
+  position: absolute;
+  z-index: 1;
+  height: 18vh;
+  background-color: $coral-red;
+  right: 0;
+  top: 0;
+  width: 10vw;
+  text-align: center;
+  color: white;
   font-size: 2vmin;
+  font-weight: $light-font;
+}
+
+.job-apply p {
+  margin-top: 7.5vh;
+}
+
+.job-title {
+  color: $coral-red;
+  text-decoration: underline;
+}
+
+.job-content {
+  font-size: 1.8vmin;
+  padding-top: 3vh;
+  padding-left: 1.5vw;
+  width: 20vw;
+}
+
+#team-photo {
+  position: absolute;
+  top: 230vh;
+  left: 15vw;
+  width: 20vw;
+  height: 15vw;
+  box-shadow: 2px 2px 5px $light-grey;
+  transform: rotate(-5deg);
+}
+
+#board-members {
+  margin-top: 3vh;
+  margin-left: 40.5vw;
+  margin-bottom: 10vh;
+}
+
+.cell-1 {
+  padding-right: 3vw;
+  padding-bottom: 2.5vh;
+}
+
+.cell-2 {
+  padding-bottom: 2.5vh;
+}
+
+.member-name {
+  font-size: 1.8vmin;
+  font-weight: $light-font;
+}
+
+.member-handle {
+  font-size: 1.8vmin;
+  color: $coral-red;
+  text-decoration: underline;
+  margin-left: 3vw;
+  font-weight: $light-font;
+}
+
+#alum-link {
+  font-weight: $bold-font;
+  color: $coral-red;
+  text-decoration: underline;
+  font-size: 2vmin;
+  cursor: pointer;
+}
+
+#sponsor-list{
+  margin-left: 40.5vw;
+  margin-bottom: 12vh;
+}
+
+.sponsor-description {
+  font-weight: $light-font;
+  width: 35vw;
+  font-size: 1.8vmin;
+  margin-bottom: 10vh;
+}
+
+#sponsor-slider {
+  width: 30vw;
+  margin-left: 1vw;
+}
+
+.sponsor-img {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
 }
