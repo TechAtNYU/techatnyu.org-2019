@@ -7,6 +7,7 @@ import FAQ from './FAQ';
 import Jobs from './Jobs';
 import Library from './Library';
 import Policy from './Policy';
+import jobModal from "./jobModal"
 
 
 const Nav = () => (
@@ -39,6 +40,7 @@ class App extends Component {
                     <Route path = 'jobs' component={Jobs} />
                     <Route path = 'library' component={Library} />
                     <Route path = 'policy' component={Policy} />
+                    <Route path = 'jobModal' component = {jobModal} />
                     <Route path = '*' component={Constants.notFound} />
                 </Route>
             </Router>
