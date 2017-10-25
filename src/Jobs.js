@@ -43,10 +43,10 @@ class JobsCard extends Component {
                 <div className="job-content" >
                     <span className="job-title">{this.props.job.attributes.positionTitle}</span><br/>
                     <span> {this.props.job.attributes.positionLevel} </span><br/><br/>
-                    <div>{this.props.job.id}</div>
+                    <div>Expires At: {this.props.job.attributes.exiresAt}</div>
                 </div>
                 <div className="job-apply">
-                    {<RaisedButton onClick = {() => {this.setState({modalIsOpen: true})}} label = "Apply" primary = {true} />}
+                    {<RaisedButton onClick = {() => {this.setState({modalIsOpen: true})}} label = "Apply" primary = {true} fullWidth = {true} />}
                 </div>       
         <Modal
           isOpen={this.state.modalIsOpen}
