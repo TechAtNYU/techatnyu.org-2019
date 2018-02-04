@@ -3,6 +3,11 @@
  */
 import React, {Component} from 'react';
 
+const ApiBase = {
+    production: 'https://api.tnyu.org/v3/',
+    test: 'https://api.tnyu.org/v3-test/'
+}
+
 const Constant = {
     facebook: "https://www.facebook.com/TechatNYU/",
     twitter: "https://twitter.com/techatnyu",
@@ -55,7 +60,8 @@ const Constants =  {
     links: Constant,
     footer: Footer,
     notFound: NotFound,
-    teams: TeamIDs
+    teams: TeamIDs,
+    apiBase: ApiBase
 }
 
 export default Constants;
