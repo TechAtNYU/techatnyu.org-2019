@@ -36,31 +36,46 @@ class JobsCard extends Component {
     closeModal(){
         this.setState({modalIsOpen: false})
     }
+    // renderHtmlDescription(){
+    // return {
+    //     <div className="content" dangerouslySetInnerHTML={{__html: this.props.job.attributes.description}}> </div>
+    // }
+    // }
+
     render() {
-       
+
         return (
             <div className="jobs-card">
                 <div className="job-content" >
                     <span className="job-title">{this.props.job.attributes.positionTitle}</span><br/>
                     <span> {this.props.job.attributes.positionLevel} </span><br/><br/>
-                    <div>Expires At: {this.props.job.attributes.exiresAt}</div>
+                    <div>Expires At: {this.props.job.attributes.exiresAt.substring(0, this.props.job.attributes.exiresAt.indexOf('T'))}</div>
                 </div>
                 <div className="job-apply">
-                    {<RaisedButton onClick = {() => {this.setState({modalIsOpen: true})}} label = "Apply" primary = {true} fullWidth = {true} />}
-                </div>       
+                    <p> <button className = "job-apply" onClick = {() => {this.setState({modalIsOpen: true})}}> Apply </button> </p>
+                </div>
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose = {this.closeModal}
-          style={this.state.customStyles}
-          contentLabel= "Example Modal"
-            >
+          style= {this.state.customStyles}
+          contentLabel= "Example Modal">
+
+            <div className = "page-intro" id  = "page-intro">
             <div> {this.props.job.attributes.positionTitle} </div>
             <div> Salary: IDK YET</div>
-            <div> Description: {this.props.job.attributes.description} </div>
-            <RaisedButton label = "Job Link" primary = {true} /> 
-            <RaisedButton onClick={this.closeModal} label = "close" primary = {true}/>
+            <div dangerouslySetInnerHTML={{__html: this.props.job.attributes.description }} />
+            </div>
 
-        </Modal>     
+            <RaisedButton
+                label = "Job Link"
+                secondary = {true}
+            />
+            <RaisedButton
+                onClick={this.closeModal}
+                label = "close"
+                secondary = {true}
+            />
+        </Modal>
             </div>
         )
     }
