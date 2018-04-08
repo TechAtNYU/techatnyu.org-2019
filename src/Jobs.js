@@ -2,12 +2,12 @@
  * Created by adisanarula on 4/7/17.
  */
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Router, Route, Switch, Link } from 'react-router';
 import Constants from './Constants';
 import {IndexLink} from "react-router";
 import Modal from "react-modal"
 import axios from "axios"
-import RaisedButton from 'material-ui/RaisedButton'
 
 const colorStyle = {
     color: "#f05158"
@@ -19,100 +19,66 @@ class JobsCard extends Component {
         super(props);
         this.state =  {
             modalIsOpen: false,
-            customStyles: {
-                content : {
-                top                   : '50%',
-                left                  : '50%',
-                right                 : 'auto',
-                bottom                : 'auto',
-                marginRight           : '-50%',
-                transform             : 'translate(-50%, -50%)'
-              }},
             data: []
         }
-        this.closeModal = this.closeModal.bind(this);
+        this.openModal = this.openModal.bind(this);
     }
 
-    closeModal(){
-        this.setState({modalIsOpen: false})
+    openModal() {
+      this.state.modalIsOpen = true;
     }
-    // renderHtmlDescription(){
-    // return {
-    //     <div className="content" dangerouslySetInnerHTML={{__html: this.props.job.attributes.description}}> </div>
-    // }
-    // }
 
     render() {
-
+        console.log(this.props.job.attributes);
         return (
-            <div className="jobs-card">
-                <div className="job-content" >
-                    <span className="job-title">{this.props.job.attributes.positionTitle}</span><br/>
-                    <span> {this.props.job.attributes.positionLevel} </span><br/><br/>
-                    <div>Expires At: {this.props.job.attributes.exiresAt.substring(0, this.props.job.attributes.exiresAt.indexOf('T'))}</div>
+            <div>
+              <div className="jobs-card">
+                  <div className="job-content" >
+                      <span className="job-title">{this.props.job.attributes.positionTitle}</span><br/>
+                      <span> {this.props.job.attributes.positionLevel} </span><br/><br/>
+                      <div>Expires At: {this.props.job.attributes.exiresAt.substring(0, this.props.job.attributes.exiresAt.indexOf('T'))}</div>
+                  </div>
+                  <div className="job-apply">
+                      <p> <button className = "job-apply" onClick = {() => {this.openModal()}}> Apply </button> </p>
+                  </div>
+              </div>
+              { this.state.modalIsOpen == true ?
+                <div id="myModal" className="modal">
+                  <div className="modal-content">
+                    <p>text in the modal</p>
+                  </div>
                 </div>
-                <div className="job-apply">
-                    <p> <button className = "job-apply" onClick = {() => {this.setState({modalIsOpen: true})}}> Apply </button> </p>
-                </div>
-        <Modal
-          isOpen={this.state.modalIsOpen}
-          onRequestClose = {this.closeModal}
-          style= {this.state.customStyles}
-          contentLabel= "Example Modal">
-
-            <div className = "page-intro" id  = "page-intro">
-            <div> {this.props.job.attributes.positionTitle} </div>
-            <div> Salary: IDK YET</div>
-            <div dangerouslySetInnerHTML={{__html: this.props.job.attributes.description }} />
+                :
+                console.log("Modal is currently closed")
+              }
             </div>
+              )
 
-            <RaisedButton
-                label = "Job Link"
-                secondary = {true}
-            />
-            <RaisedButton
-                onClick={this.closeModal}
-                label = "close"
-                secondary = {true}
-            />
-        </Modal>
-            </div>
-        )
+              // <!-- Trigger/Open The Modal -->
+
+
+        // <Modal
+        //   isOpen={this.state.modalIsOpen}
+        //   onRequestClose = {this.closeModal}
+        //   style= {this.state.customStyles}
+        //   contentLabel= "Example Modal">
+        //
+        //     <div className = "page-intro" id  = "page-intro">
+        //     <div> {this.props.job.attributes.positionTitle} </div>
+        //     <div> Salary: IDK YET</div>
+        //     <div dangerouslySetInnerHTML={{__html: this.props.job.attributes.description }} /></div>
+        //     <a target="_blank" href = {`${this.props.job.attributes.applicationUrl}`}>
+        //         <button> Job Link </button>
+        //     </a>
+        //
+        //     <button onClick = {() => this.closeModal()}> Close </button>
+        //
+        // </Modal>
+        //     </div>
+
     }
 }
 
-const placeholder = [{
-        title: 'Data Scientist Intern',
-        paid: 'Paid',
-        salary: '15 hours/week',
-        location: 'New York, NY',
-        description: 'Description description description description description description description description.',
-        link: ''
-    },
-    {
-        title: 'Data Scientist Intern',
-        paid: 'Paid',
-        salary: '15 hours/week',
-        location: 'New York, NY',
-        description: 'Description description description description description description description description.',
-        link: ''
-    },
-    {
-        title: 'Data Scientist Intern',
-        paid: 'Paid',
-        salary: '15 hours/week',
-        location: 'New York, NY',
-        description: 'Description description description description description description description description.',
-        link: ''
-    },
-    {
-        title: 'Data Scientist Intern',
-        paid: 'Paid',
-        salary: '15 hours/week',
-        location: 'New York, NY',
-        description: 'Description description description description description description description description.',
-        link: ''
-    }];
 
 class Jobs extends Component{
     constructor(props){
@@ -150,7 +116,7 @@ class Jobs extends Component{
                     {console.log('In render method', this.state.data)}
                     {this.state.data.length !== 0 ? this.state.data.map( (obj, index) => {
                         return <JobsCard key={index} job={obj}/>
-                    }) : console.log("")}
+                    }) : console.log("Unavailable")}
                 </div>
                 <footer id = "footer">
                     <Constants.footer/>
@@ -161,4 +127,3 @@ class Jobs extends Component{
 }
 
 export default Jobs;
-
