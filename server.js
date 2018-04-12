@@ -18,6 +18,10 @@ app.use(webpackDevMiddleware(compiler, {
   historyApiFallback: true,
 }));
  
+app.get('/anti-harassment', function(req, res) {
+  res.redirect('/#/policy');
+})
+
 var server = app.listen(3000, function() {
   var host = server.address().address;
   var port = server.address().port;
