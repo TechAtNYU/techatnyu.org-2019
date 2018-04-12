@@ -25,11 +25,10 @@ class JobsCard extends Component {
     }
 
     openModal() {
-      this.state.modalIsOpen = true;
+      this.setState({modalIsOpen: true});
     }
 
     render() {
-        console.log(this.props.job.attributes);
         return (
             <div>
               <div className="jobs-card">
@@ -39,11 +38,11 @@ class JobsCard extends Component {
                       <div>Expires At: {this.props.job.attributes.exiresAt.substring(0, this.props.job.attributes.exiresAt.indexOf('T'))}</div>
                   </div>
                   <div className="job-apply">
-                      <p> <button className = "job-apply" onClick = {() => {this.openModal()}}> Apply </button> </p>
+                      <p> <button className = "job-apply" onClick ={() => {this.openModal()}}> Apply </button> </p>
                   </div>
               </div>
               { this.state.modalIsOpen == true ?
-                <div id="myModal" className="modal">
+              <div id="myModal" className="modal">
                   <div className="modal-content">
                     <p>text in the modal</p>
                   </div>
