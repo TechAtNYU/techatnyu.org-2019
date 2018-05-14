@@ -36,7 +36,7 @@ class Footer extends Component {
             <div>
                 <hr></hr>
                 <div id="footer-content">
-                    <div id="copyright"> ©Tech@NYU, 2016 </div>
+                    <div id="copyright"> ©Tech@NYU, 2018 </div>
                     <div id="social-handles">
                         <a href = {Constant.facebook} target="_blank">Facebook</a>
                         <a href= {Constant.twitter} target="_blank">Twitter</a>

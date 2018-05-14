@@ -16,7 +16,7 @@ const Nav = () => (
                         <li><IndexLink  title="home" activeClassName="active" to="/">home</IndexLink></li>
                         <li><IndexLink  title="about" activeClassName="active" to="/about">about</IndexLink></li>
                         <li><IndexLink  title="faq" activeClassName="active" to="/faq">faq</IndexLink></li>
-                        <li><a href= {Constants.medium} target="_blank">blog</a></li>
+                        <li><a href= {Constants.links.medium} target="_blank">blog</a></li>
                         <li><a href= {Constants.links.calendar} target="_blank">calendar</a></li>
                         <li><a href= {Constants.links.rsvp} target="_blank">rsvp</a></li>
                     </ul>
