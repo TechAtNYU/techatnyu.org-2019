@@ -49,7 +49,7 @@ class FAQ extends Component {
                     </div>
                     <div className="question-answer">
                         <div className="question"> What roles are within the e-board? </div>
-                        <div className="answer"> We have various roles and teams within the e-board. Normally each team will have a team lead and one or two other team members. Aside from the event teams, the e-board also has infrastructure, marketing, and other operational roles. Check out our <a href="about.html">about</a> page to find out more about the different teams in Tech@NYU and see additional information on our e-board members.</div>
+                        <div className="answer"> We have various roles and teams within the e-board. Normally each team will have a team lead and one or two other team members. Aside from the event teams, the e-board also has infrastructure, marketing, and other operational roles. Check out our <a href="#/about">about</a> page to find out more about the different teams in Tech@NYU and see additional information on our e-board members.</div>
                     </div>
                     <div className="email-us">
                         If you have additional questions, please don't hesitate to email us at <a href="mailto:hello@techatnyu.org">hello@techatnyu.org!</a>
