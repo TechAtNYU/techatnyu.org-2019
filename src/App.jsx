@@ -17,8 +17,8 @@ const Nav = () => (
                         <li><IndexLink  title="about" activeClassName="active" to="/about">about</IndexLink></li>
                         <li><IndexLink  title="faq" activeClassName="active" to="/faq">faq</IndexLink></li>
                         <li><a href= {Constants.links.medium} target="_blank">blog</a></li>
-                        <li><a href= {Constants.links.calendar} target="_blank">calendar</a></li>
-                        <li><a href= {Constants.links.rsvp} target="_blank">rsvp</a></li>
+                        {/*<li><a href= {Constants.links.calendar} target="_blank">calendar</a></li>*/}
+                        {/*<li><a href= {Constants.links.rsvp} target="_blank">rsvp</a></li>*/}
                     </ul>
                 </div>
         </nav>
@@ -32,12 +32,12 @@ const Container = (props) => <div>
 class App extends Component {
     render() {
         return (
-            <Router onUpdate ={()=> window.scrollTo(0,0)} history={hashHistory}>
+            <Router onUpdate ={() => window.scrollTo(0,0)} history={hashHistory}>
                 <Route path="/" component = {Container}>
                     <IndexRoute component={Home} />
                     <Route path='about' component={About} />
                     <Route path = 'faq' component={FAQ} />
-                    <Route path = 'jobs' component={Jobs} />
+                    {/*<Route path = 'jobs' component={Jobs} />*/}
                     <Route path = 'library' component={Library} />
                     <Route path = 'policy' component={Policy} />
                     <Route path = '*' component={Constants.notFound} />

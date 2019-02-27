@@ -5,9 +5,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import Constants from './Constants'
-import {Link} from 'react-router';
-import members from '../data/eboard.json';
-import sponsors from '../data/sponsors.json';
+import { Link } from 'react-router';
+import { members } from './data/eboard.json';
+import sponsors from './data/sponsors.json';
 
 const fontStyle = {
     fontSize: "1.8vmin"
@@ -99,69 +99,22 @@ const Teams = () => (
 
 class Board extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            boardMembers: []
-        }
-    }
-
-    getInfo(id, array) {
-        let url = Constants.apiBase['test'] + 'memberships/' + id + '?include=member,position';
-        let info = fetch(url, {
-            method: 'GET',
-        })
-        .then((response) => response.json())
-        .then((responseData) => {
-
-            let person = {
-                "name": responseData.included[0].attributes.name
-            }
-
-            person["role"] = Constants.teams[responseData.included[1].relationships.team.data.id];
-            person["link"] = responseData.included[1].attributes.contact;
-            
-            if (person["role"] != null) {
-                let temp = this.state.boardMembers;
-                temp.push(person);
-                this.setState({boardMembers: temp});
-            }
-        })
-    }
-
-    getMembers() {
-        let array = [];
-        fetch(Constants.apiBase['test'] + 'memberships', {
-            method:'GET',
-        })
-        .then((response) => response.json())
-        .then((responseData) => {
-            for (let i = 0; i < responseData.data.length; i++) {
-                if (responseData.data[i].attributes.isActive) {
-                    let id = responseData.data[i].id;
-                    this.getInfo(id, array);
-                }
-            }
-        });
-    }
-
-    componentDidMount() {
-        this.getMembers(this.state.boardMembers);
-    }
-
     render() {
 
         let memberPairs = [];
         // Pair members together to put them in the table
-        for (let i = 0; i < this.state.boardMembers.length; i+=2) {
+        for (let i = 0; i < members.length; i+=2) {
 
-            let pairs = {
-                0: this.state.boardMembers[i],
-                1: this.state.boardMembers[i+1]
-            };
+            let pair = [
+                members[i],
+                members[i+1]
+            ];
 
-            memberPairs.push(pairs);
+            memberPairs.push(pair);
+            console.log(members[i]);
         }
+
+        console.log(memberPairs, members.length);
 
         return (
             <div id="board-members">
@@ -177,7 +130,7 @@ class Board extends Component {
                                     </span>
                                      <br/>
                                      <span>
-                                        <a className = "member-handle" href={obj[0].link} target="__blank">@{obj[0].name}</a>
+                                        <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>
                                      </span>
                                  </td>
                                  <td className="cell-2">
@@ -186,7 +139,7 @@ class Board extends Component {
                                     </span>
                                     <br/>
                                      <span>
-                                        <a className="member-handle" href={obj[1].link} target="__blank">@{obj[1].name}</a>
+                                        <a className="member-handle" href={obj[1].link} target="__blank">Website</a>
                                     </span>
                                  </td>
                              </tr>
@@ -198,7 +151,7 @@ class Board extends Component {
                                     </span>
                                     <br/>
                                      <span>
-                                        <a className = "member-handle" href={obj[0].link} target="__blank">@{obj[0].name}</a>
+                                        <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>
                                     </span>
                                  </td>
                              </tr>

@@ -52,7 +52,7 @@ class Footer extends Component {
 const NotFound = () => (
     <div>
         <img id="dots" src="/img/dots.png"/>
-        <h1 className="not-found">404 Page Not Found</h1>
+        <h1 className="not-found">404 Page Not Found :-(</h1>
     </div>
 )
 
