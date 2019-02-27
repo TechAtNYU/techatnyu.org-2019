@@ -104,17 +104,12 @@ class Board extends Component {
         let memberPairs = [];
         // Pair members together to put them in the table
         for (let i = 0; i < members.length; i+=2) {
-
             let pair = [
                 members[i],
                 members[i+1]
             ];
-
             memberPairs.push(pair);
-            console.log(members[i]);
         }
-
-        console.log(memberPairs, members.length);
 
         return (
             <div id="board-members">
