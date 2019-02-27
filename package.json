@@ -8,12 +8,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "Adisa Narula",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-bourbon": "^4.2.8",
     "node-sass": "^4.5.0",
     "react": "^15.4.2",
