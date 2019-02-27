@@ -1,19 +1,31 @@
-Tech@NYU Main Site
+# Tech@NYU Main Site 2019
 
-Setup
----
+This app uses Create React App.
+
+## Running locally
+
+Install dependencies: 
 
 ```
 npm install
 ```
 
-
-Start Application
----
+Start application on `localhost:3000`:
 
 ```
 npm start
-
 ```
 
-* Application will start on localhost:3000
+## Deploy
+
+Deploy site to Github pages:
+
+```
+npm run deploy
+```
+
+Our DNS routing is on Cloudflare.
+
+
+
+
