@@ -19,6 +19,33 @@
       "name": "Michael Yang",
       "role": "Infra",
       "link": "http://yang.money"
+    },
+    {
+      "name": "Ivanna Pena",
+      "role": "Administrator",
+      "link": "https://www.ivannapena.com/"
+    },
+    {
+      "name": "Miles Chrusciel",
+      "role": "Marketing Lead"
+    },
+    {
+      "name": "Brad Davis",
+      "role": "AfterHours Organizer"
+    },
+    {
+      "name": "Rachel Geng",
+      "role": "Games Lead",
+      "link": "http://rachel-geng.com/"
+    },
+    {
+      "name": "Jennifer Lopez",
+      "role": "Marketing"
+    },
+    {
+      "name": "Akiva Thalheim",
+      "role": "Operations",
+      "link": "http://akivathalheim.com"
     }
   ]
 }

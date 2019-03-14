@@ -125,7 +125,7 @@ class Board extends Component {
                                     </span>
                                      <br/>
                                      <span>
-                                        <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>
+                                        {obj[0].link && <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>}
                                      </span>
                                  </td>
                                  <td className="cell-2">
@@ -134,7 +134,7 @@ class Board extends Component {
                                     </span>
                                     <br/>
                                      <span>
-                                        <a className="member-handle" href={obj[1].link} target="__blank">Website</a>
+                                        {obj[1].link && <a className = "member-handle" href={obj[1].link} target="__blank">Website</a>}
                                     </span>
                                  </td>
                              </tr>
@@ -146,7 +146,7 @@ class Board extends Component {
                                     </span>
                                     <br/>
                                      <span>
-                                        <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>
+                                        {obj[0].link && <a className = "member-handle" href={obj[0].link} target="__blank">Website</a>}
                                     </span>
                                  </td>
                              </tr>
